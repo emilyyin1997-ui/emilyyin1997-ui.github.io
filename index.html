@@ -26,27 +26,16 @@
     ul{padding-left:1.15rem}li{margin:.24rem 0}.checklist{columns:2;column-gap:2rem}.checklist li{break-inside:avoid;list-style:disc;padding-left:.2rem}.table-wrap{overflow:auto;border:1px solid var(--line);border-radius:14px}table{border-collapse:collapse;width:100%;min-width:680px;background:var(--card)}th,td{padding:.8rem .9rem;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}th{background:#eee0cc;color:#583b2e}tr:last-child td{border-bottom:0}
     .sources{font-size:.9rem}.sources li{margin:.55rem 0}.footer{padding:2rem clamp(24px,5vw,64px) 4rem;background:#2d3d40;color:#edf1eb}.footer a{color:#ffd693}.print-note{display:none}
     @media(max-width:760px){.cover{min-height:76vh}.cover-foot{align-items:start}.stamp{display:none}.facts,.summary,.spot-meta{grid-template-columns:1fr 1fr}.grid2{grid-template-columns:1fr}.day-head{grid-template-columns:auto 1fr}.lodging{grid-column:1/-1;text-align:left;padding-left:5rem}.timeline:before{left:6.45rem}.slot{grid-template-columns:5.8rem minmax(0,1fr);gap:1.2rem}.time{font-size:.82rem}.checklist{columns:1}main{padding-left:18px;padding-right:18px}}
-    .offline-toolbar{position:fixed;z-index:30;left:50%;bottom:max(12px,env(safe-area-inset-bottom));transform:translateX(-50%);width:min(94vw,760px);display:flex;align-items:center;gap:.45rem;padding:.55rem;background:rgba(35,48,50,.96);color:#fff;border:1px solid rgba(255,255,255,.2);border-radius:18px;box-shadow:0 16px 45px rgba(25,20,16,.28);backdrop-filter:blur(14px)}
-    .offline-state{display:flex;align-items:center;gap:.55rem;min-width:145px;padding:0 .45rem}.offline-state b,.offline-state small{display:block;line-height:1.25}.offline-state small{color:#cdd8d5;font-size:.72rem}.offline-dot{width:.65rem;height:.65rem;flex:0 0 auto;border-radius:50%;background:#88c99b;box-shadow:0 0 0 4px rgba(136,201,155,.16)}
-    .offline-actions{display:flex;gap:.35rem;overflow:auto;scrollbar-width:none}.offline-actions::-webkit-scrollbar{display:none}.offline-actions a,.offline-actions button{appearance:none;border:0;border-radius:11px;background:rgba(255,255,255,.12);color:#fff;padding:.55rem .7rem;font:inherit;font-size:.78rem;white-space:nowrap;text-decoration:none;cursor:pointer}.offline-actions a:hover,.offline-actions button:hover{background:rgba(255,255,255,.22)}
     .day-toggle{appearance:none;border:1px solid var(--line);background:var(--soft);color:var(--ink);border-radius:999px;padding:.32rem .75rem;margin-top:.45rem;font:inherit;font-size:.78rem;cursor:pointer}.day.collapsed>.timeline,.day.collapsed>.grid2,.day.collapsed>.callout,.day.collapsed>.route-choice{display:none}.day.collapsed{padding-bottom:18px}.day.collapsed .day-head{margin-bottom:0;border-bottom:0;padding-bottom:0}
     .offline-note{display:flex;align-items:flex-start;gap:.65rem;background:#e7f2ea;border:1px solid #bdd6c4;border-radius:14px;padding:.9rem 1rem;margin:1rem 0 1.5rem}.offline-note b{display:block;color:#315d49}.offline-note p{margin:0;color:#50645b;font-size:.9rem}.offline-note .icon{font-size:1.3rem}
     .guide-extra{margin-top:1rem;padding-top:1rem;border-top:1px dashed var(--line);display:grid;grid-template-columns:repeat(3,1fr);gap:.75rem}.guide-extra>div{background:#fffaf2;border:1px solid #eadcca;border-radius:12px;padding:.8rem .9rem}.guide-extra b{display:block;color:var(--terra);margin-bottom:.25rem}.guide-extra p{margin:0;font-size:.9rem;color:#5f5349}
     .guide-link,.map-link{display:inline-flex;align-items:center;justify-content:center;gap:.3rem;border-radius:999px;text-decoration:none;font-weight:750;line-height:1.2}.guide-link{margin-left:.45rem;padding:.28rem .62rem;background:#edf3ef;border:1px solid #bfd2c7;color:#356256;font-size:.78rem;white-space:nowrap}.guide-link:hover{background:#dcebe2}.map-link{padding:.42rem .72rem;background:#fff4df;border:1px solid #e6bf7f;color:#81501d;font-size:.78rem}.map-link:hover{background:#fbe8c4}.spot-actions{display:flex;flex-direction:column;align-items:flex-end;gap:.45rem;white-space:nowrap}.spot[id]{scroll-margin-top:76px}.route-choice{margin:1.2rem 0;border:1px solid #d7bd91;background:#fff8e9;border-radius:14px;overflow:hidden}.route-choice summary{cursor:pointer;padding:.9rem 1rem;font-weight:800;color:#744320;background:#f8e8cb}.route-choice[open] summary{border-bottom:1px solid #e2cda9}.route-choice .route-body{padding:.5rem 1rem 1rem}.route-choice .timeline{margin:.65rem 0}.nav-note{font-size:.78rem;color:var(--muted);margin:.5rem 0 0}
-    body{padding-bottom:92px}
     @media(max-width:760px){.guide-extra{grid-template-columns:1fr}}
-    @media(max-width:620px){.offline-toolbar{width:calc(100vw - 16px);bottom:max(8px,env(safe-area-inset-bottom));border-radius:15px}.offline-state{min-width:112px}.offline-state b{font-size:.82rem}.offline-state small{font-size:.67rem}.offline-actions a,.offline-actions button{padding:.5rem .62rem}.spot-top{align-items:flex-start}.spot-actions{gap:.35rem}}
-    @media print{@page{size:A4;margin:14mm 13mm 15mm}body{background:#fff;font-size:10pt;padding-bottom:0}.offline-toolbar,.day-toggle,.guide-link,.map-link{display:none!important}.book{max-width:none;box-shadow:none}nav{display:none}.cover{min-height:255mm;page-break-after:always;-webkit-print-color-adjust:exact;print-color-adjust:exact}.cover h1{font-size:54pt}main{padding:0}.print-note{display:block}.day{box-shadow:none;margin:1rem 0 1.4rem;padding:15px}.day.collapsed>.timeline,.day.collapsed>.grid2,.day.collapsed>.callout,.day.collapsed>.route-choice{display:block}.route-choice{break-inside:avoid}.route-choice>summary{list-style:none}.route-choice:not([open])>.route-body{display:block}.spot{padding:15px}.guide-extra{grid-template-columns:repeat(3,1fr)}section{margin-bottom:2rem;break-before:page}#overview{break-before:auto}.day,.spot,.callout,.mini,.summary-card{break-inside:avoid}a{color:inherit;text-decoration:none}.footer{background:#fff;color:#222;padding:1rem 0}.footer a{color:#222}.summary{grid-template-columns:repeat(4,1fr)}h2{font-size:24pt}h3{font-size:15pt}}
+    @media(max-width:620px){.spot-top{align-items:flex-start}.spot-actions{gap:.35rem}}
+    @media print{@page{size:A4;margin:14mm 13mm 15mm}body{background:#fff;font-size:10pt;padding-bottom:0}.day-toggle,.guide-link,.map-link{display:none!important}.book{max-width:none;box-shadow:none}nav{display:none}.cover{min-height:255mm;page-break-after:always;-webkit-print-color-adjust:exact;print-color-adjust:exact}.cover h1{font-size:54pt}main{padding:0}.print-note{display:block}.day{box-shadow:none;margin:1rem 0 1.4rem;padding:15px}.day.collapsed>.timeline,.day.collapsed>.grid2,.day.collapsed>.callout,.day.collapsed>.route-choice{display:block}.route-choice{break-inside:avoid}.route-choice>summary{list-style:none}.route-choice:not([open])>.route-body{display:block}.spot{padding:15px}.guide-extra{grid-template-columns:repeat(3,1fr)}section{margin-bottom:2rem;break-before:page}#overview{break-before:auto}.day,.spot,.callout,.mini,.summary-card{break-inside:avoid}a{color:inherit;text-decoration:none}.footer{background:#fff;color:#222;padding:1rem 0}.footer a{color:#222}.summary{grid-template-columns:repeat(4,1fr)}h2{font-size:24pt}h3{font-size:15pt}}
   </style>
 </head>
 <body>
-<aside class="offline-toolbar" aria-label="离线路书工具栏">
-  <div class="offline-state"><span class="offline-dot"></span><div><b>离线可用</b><small>完整路书 · 本地文件</small></div></div>
-  <div class="offline-actions">
-    <a href="#schedule">逐日行程</a><a href="#tickets">票务</a><a href="#packing">行李</a>
-    <button type="button" id="expandAll">展开全部</button><button type="button" id="printBook">打印/PDF</button>
-  </div>
-</aside>
 <article class="book">
   <header class="cover">
     <div>
@@ -384,14 +373,6 @@
     var titleBox=day.querySelector('.day-head>div:nth-child(2)');if(titleBox) titleBox.appendChild(button);
     button.addEventListener('click',function(){var collapsed=day.classList.toggle('collapsed');button.textContent=collapsed?'展开当天':'收起当天';});
   });
-
-  var expandButton=document.getElementById('expandAll');
-  expandButton.addEventListener('click',function(){
-    var anyOpen=Array.prototype.some.call(document.querySelectorAll('.day'),function(day){return !day.classList.contains('collapsed');});
-    document.querySelectorAll('.day').forEach(function(day){day.classList.toggle('collapsed',anyOpen);var b=day.querySelector('.day-toggle');if(b)b.textContent=anyOpen?'展开当天':'收起当天';});
-    expandButton.textContent=anyOpen?'展开全部':'收起全部';
-  });
-  document.getElementById('printBook').addEventListener('click',function(){window.print();});
 })();
 </script>
 </body>
