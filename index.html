@@ -23,16 +23,18 @@
     .timeline{position:relative;margin:1.1rem 0}.timeline:before{content:"";position:absolute;left:7.6rem;top:.3rem;bottom:.3rem;width:1px;background:var(--line)}.slot{display:grid;grid-template-columns:6.9rem minmax(0,1fr);gap:1.4rem;padding:.48rem 0}.time{font-weight:800;color:var(--terra);font-variant-numeric:tabular-nums;text-align:right;white-space:nowrap;font-size:.94rem}.slot p{margin:0;min-width:0}.slot em{font-style:normal;color:var(--muted)}
     .grid2{display:grid;grid-template-columns:1fr 1fr;gap:1rem}.mini{background:#f7efe3;border:1px solid var(--line);padding:.9rem 1rem;border-radius:12px}.mini h4{margin:0 0 .35rem}.mini p,.mini ul{margin:.25rem 0}.tags{display:flex;gap:.4rem;flex-wrap:wrap;margin:.7rem 0}.tag{font-size:.78rem;padding:.15rem .5rem;border-radius:999px;background:var(--soft);color:#664b37}
     .spot{border:1px solid var(--line);background:var(--card);border-radius:18px;padding:clamp(18px,3vw,30px);margin:1.4rem 0;break-inside:avoid-page}.spot-top{display:flex;justify-content:space-between;gap:1rem;align-items:start}.spot h3{margin:.1rem 0}.rating{white-space:nowrap;background:var(--night);color:#fff;padding:.3rem .65rem;border-radius:999px;font-size:.8rem}.spot-meta{display:grid;grid-template-columns:repeat(4,1fr);gap:.7rem;margin:1rem 0}.spot-meta div{background:#f7efe3;border-radius:10px;padding:.6rem .7rem;font-size:.87rem}.spot-meta b{display:block;color:var(--terra)}
+    .spot-meta .hours{grid-column:span 2;background:var(--ok);border:1px solid #c8ddce}.spot-meta .hours b{color:#315d49}
+    .budget-summary{display:grid;grid-template-columns:repeat(4,1fr);gap:.8rem;margin:1.2rem 0}.budget-summary>div{background:var(--night);color:#fff;border-radius:14px;padding:1rem}.budget-summary b{display:block;color:#ffd693;font-size:1.35rem;font-variant-numeric:tabular-nums}.budget-summary small{color:#d9e2df}.budget-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem}.budget-group{border:1px solid var(--line);background:var(--card);border-radius:16px;padding:1rem}.budget-group h3{display:flex;justify-content:space-between;gap:.6rem;margin:0 0 .75rem;font-size:1.2rem}.budget-group h3 span{color:var(--terra);font-size:1rem;font-variant-numeric:tabular-nums}.budget-item{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:.8rem;align-items:center;padding:.55rem 0;border-bottom:1px dashed var(--line)}.budget-item:last-child{border-bottom:0}.budget-item span:first-child{font-size:.92rem}.budget-item small{display:block;color:var(--muted);line-height:1.4}.money-input{display:flex;align-items:center;gap:.25rem;color:var(--terra);font-weight:800}.money-input input{width:6.4rem;border:1px solid var(--line);background:#fffaf2;color:var(--ink);border-radius:9px;padding:.45rem .5rem;text-align:right;font:inherit;font-variant-numeric:tabular-nums}.money-input input:focus{outline:3px solid rgba(83,123,112,.2);border-color:var(--jade)}
     ul{padding-left:1.15rem}li{margin:.24rem 0}.checklist{columns:2;column-gap:2rem}.checklist li{break-inside:avoid;list-style:disc;padding-left:.2rem}.table-wrap{overflow:auto;border:1px solid var(--line);border-radius:14px}table{border-collapse:collapse;width:100%;min-width:680px;background:var(--card)}th,td{padding:.8rem .9rem;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}th{background:#eee0cc;color:#583b2e}tr:last-child td{border-bottom:0}
     .sources{font-size:.9rem}.sources li{margin:.55rem 0}.footer{padding:2rem clamp(24px,5vw,64px) 4rem;background:#2d3d40;color:#edf1eb}.footer a{color:#ffd693}.print-note{display:none}
-    @media(max-width:760px){.cover{min-height:76vh}.cover-foot{align-items:start}.stamp{display:none}.facts,.summary,.spot-meta{grid-template-columns:1fr 1fr}.grid2{grid-template-columns:1fr}.day-head{grid-template-columns:auto 1fr}.lodging{grid-column:1/-1;text-align:left;padding-left:5rem}.timeline:before{left:6.45rem}.slot{grid-template-columns:5.8rem minmax(0,1fr);gap:1.2rem}.time{font-size:.82rem}.checklist{columns:1}main{padding-left:18px;padding-right:18px}}
+    @media(max-width:760px){.cover{min-height:76vh}.cover-foot{align-items:start}.stamp{display:none}.facts,.summary,.spot-meta,.budget-summary{grid-template-columns:1fr 1fr}.grid2,.budget-grid{grid-template-columns:1fr}.day-head{grid-template-columns:auto 1fr}.lodging{grid-column:1/-1;text-align:left;padding-left:5rem}.timeline:before{left:6.45rem}.slot{grid-template-columns:5.8rem minmax(0,1fr);gap:1.2rem}.time{font-size:.82rem}.checklist{columns:1}main{padding-left:18px;padding-right:18px}}
     .day-toggle{appearance:none;border:1px solid var(--line);background:var(--soft);color:var(--ink);border-radius:999px;padding:.32rem .75rem;margin-top:.45rem;font:inherit;font-size:.78rem;cursor:pointer}.day.collapsed>.timeline,.day.collapsed>.grid2,.day.collapsed>.callout,.day.collapsed>.route-choice{display:none}.day.collapsed{padding-bottom:18px}.day.collapsed .day-head{margin-bottom:0;border-bottom:0;padding-bottom:0}
     .offline-note{display:flex;align-items:flex-start;gap:.65rem;background:#e7f2ea;border:1px solid #bdd6c4;border-radius:14px;padding:.9rem 1rem;margin:1rem 0 1.5rem}.offline-note b{display:block;color:#315d49}.offline-note p{margin:0;color:#50645b;font-size:.9rem}.offline-note .icon{font-size:1.3rem}
     .guide-extra{margin-top:1rem;padding-top:1rem;border-top:1px dashed var(--line);display:grid;grid-template-columns:repeat(3,1fr);gap:.75rem}.guide-extra>div{background:#fffaf2;border:1px solid #eadcca;border-radius:12px;padding:.8rem .9rem}.guide-extra b{display:block;color:var(--terra);margin-bottom:.25rem}.guide-extra p{margin:0;font-size:.9rem;color:#5f5349}
     .guide-link,.map-link{display:inline-flex;align-items:center;justify-content:center;gap:.3rem;border-radius:999px;text-decoration:none;font-weight:750;line-height:1.2}.guide-link{margin-left:.45rem;padding:.28rem .62rem;background:#edf3ef;border:1px solid #bfd2c7;color:#356256;font-size:.78rem;white-space:nowrap}.guide-link:hover{background:#dcebe2}.map-link{padding:.42rem .72rem;background:#fff4df;border:1px solid #e6bf7f;color:#81501d;font-size:.78rem}.map-link:hover{background:#fbe8c4}.spot-actions{display:flex;flex-direction:column;align-items:flex-end;gap:.45rem;white-space:nowrap}.spot[id]{scroll-margin-top:76px}.route-choice{margin:1.2rem 0;border:1px solid #d7bd91;background:#fff8e9;border-radius:14px;overflow:hidden}.route-choice summary{cursor:pointer;padding:.9rem 1rem;font-weight:800;color:#744320;background:#f8e8cb}.route-choice[open] summary{border-bottom:1px solid #e2cda9}.route-choice .route-body{padding:.5rem 1rem 1rem}.route-choice .timeline{margin:.65rem 0}.nav-note{font-size:.78rem;color:var(--muted);margin:.5rem 0 0}
     @media(max-width:760px){.guide-extra{grid-template-columns:1fr}}
     @media(max-width:620px){.spot-top{align-items:flex-start}.spot-actions{gap:.35rem}}
-    @media print{@page{size:A4;margin:14mm 13mm 15mm}body{background:#fff;font-size:10pt;padding-bottom:0}.day-toggle,.guide-link,.map-link{display:none!important}.book{max-width:none;box-shadow:none}nav{display:none}.cover{min-height:255mm;page-break-after:always;-webkit-print-color-adjust:exact;print-color-adjust:exact}.cover h1{font-size:54pt}main{padding:0}.print-note{display:block}.day{box-shadow:none;margin:1rem 0 1.4rem;padding:15px}.day.collapsed>.timeline,.day.collapsed>.grid2,.day.collapsed>.callout,.day.collapsed>.route-choice{display:block}.route-choice{break-inside:avoid}.route-choice>summary{list-style:none}.route-choice:not([open])>.route-body{display:block}.spot{padding:15px}.guide-extra{grid-template-columns:repeat(3,1fr)}section{margin-bottom:2rem;break-before:page}#overview{break-before:auto}.day,.spot,.callout,.mini,.summary-card{break-inside:avoid}a{color:inherit;text-decoration:none}.footer{background:#fff;color:#222;padding:1rem 0}.footer a{color:#222}.summary{grid-template-columns:repeat(4,1fr)}h2{font-size:24pt}h3{font-size:15pt}}
+    @media print{@page{size:A4;margin:14mm 13mm 15mm}body{background:#fff;font-size:10pt;padding-bottom:0}.day-toggle,.guide-link,.map-link{display:none!important}.book{max-width:none;box-shadow:none}nav{display:none}.cover{min-height:255mm;page-break-after:always;-webkit-print-color-adjust:exact;print-color-adjust:exact}.cover h1{font-size:54pt}main{padding:0}.print-note{display:block}.day{box-shadow:none;margin:1rem 0 1.4rem;padding:15px}.day.collapsed>.timeline,.day.collapsed>.grid2,.day.collapsed>.callout,.day.collapsed>.route-choice{display:block}.route-choice{break-inside:avoid}.route-choice>summary{list-style:none}.route-choice:not([open])>.route-body{display:block}.spot{padding:15px}.guide-extra{grid-template-columns:repeat(3,1fr)}section{margin-bottom:2rem;break-before:page}#overview{break-before:auto}.day,.spot,.callout,.mini,.summary-card,.budget-group{break-inside:avoid}a{color:inherit;text-decoration:none}.footer{background:#fff;color:#222;padding:1rem 0}.footer a{color:#222}.summary,.budget-summary{grid-template-columns:repeat(4,1fr)}.money-input input{border:0;background:transparent;width:5.4rem;padding:0}h2{font-size:24pt}h3{font-size:15pt}}
   </style>
 </head>
 <body>
@@ -47,7 +49,7 @@
     <div class="cover-foot"><div class="cover-date"><b>2026.09.24 — 10.01</b><br>8 天 7 晚 · 逐小时执行版</div><div class="stamp">旅行手册</div></div>
   </header>
 
-  <nav aria-label="目录"><a href="#overview">总览</a><a href="#schedule">逐日行程</a><a href="#spots">景点指南</a><a href="#food">餐饮住宿</a><a href="#tickets">票务交通</a><a href="#packing">装备清单</a><a href="#sources">核实来源</a></nav>
+  <nav aria-label="目录"><a href="#overview">总览</a><a href="#schedule">逐日行程</a><a href="#spots">景点指南</a><a href="#food">餐饮住宿</a><a href="#budget">预算</a><a href="#tickets">票务交通</a><a href="#packing">装备清单</a><a href="#sources">核实来源</a></nav>
 
   <main>
     <section id="overview">
@@ -129,15 +131,15 @@
           <div class="slot"><div class="time">07:55—08:05</div><p>检查油量、轮胎和导航离线地图；每人带 1—1.5L 水。</p></div>
           <div class="slot"><div class="time">08:05</div><p>自驾前往马蹄寺，山路不抢行、不超车赶时间。</p></div>
           <div class="slot"><div class="time">09:30—09:40</div><p>停车、换票、上洗手间。</p></div>
-          <div class="slot"><div class="time">09:40—11:40</div><p><b>马蹄寺核心游览</b>：北寺崖壁全景 → 三十三天石窟 → 藏佛殿/马蹄殿；外围区域按时间取舍。<a class="guide-link" href="#spot-matisi">查看指南</a></p></div>
-          <div class="slot"><div class="time">11:45—12:25</div><p><b>祁连山脚下骑马</b>，限 40 分钟左右；选择正规经营点、戴头盔、由马夫带领，新手不跑马。<a class="guide-link" href="#spot-daduma">骑马指南</a></p></div>
-          <div class="slot"><div class="time">12:30—13:30</div><p><b>正式午餐 60 分钟</b>：提前订餐，可选清炖/手抓羊肉、面片、土豆和当地蔬菜。</p></div>
-          <div class="slot"><div class="time">13:30—14:20</div><p><b>大都麻村方向秋景</b>：沿允许通行道路看草甸、林带和祁连雪峰，选择安全宽阔处停车，不驶入不明土路。<a class="guide-link" href="#spot-daduma">查看指南</a></p></div>
-          <div class="slot"><div class="time">14:20</div><p><b>硬离开节点</b>，立即前往七彩丹霞；遇雨雪、浓雾或结冰时取消村道绕行。</p></div>
-          <div class="slot"><div class="time">16:40—19:10</div><p><b>七彩丹霞</b>：按入口景交循环游览七彩云海台、锦绣台、虹霞台，把最后 45—60 分钟留给傍晚斜光。<a class="guide-link" href="#spot-danxia">查看指南</a></p></div>
-          <div class="slot"><div class="time">19:10—20:10</div><p>返回张掖市区。</p></div>
-          <div class="slot"><div class="time">20:20—21:50</div><p><b>张掖重点晚餐</b>：提前预订小份卷子鸡，再配炒拨拉、烤羊肉或搓鱼面；两人不要一次点齐所有主食。</p></div>
-          <div class="slot"><div class="time">21:50—22:30</div><p>甘州市场/钟鼓楼附近散步，夜市只补甜醅、杏皮水等一两样。</p></div>
+          <div class="slot"><div class="time">09:40—11:20</div><p><b>马蹄寺核心游览</b>：北寺崖壁全景 → 三十三天石窟 → 藏佛殿/马蹄殿；外围区域按时间取舍。<a class="guide-link" href="#spot-matisi">查看指南</a></p></div>
+          <div class="slot"><div class="time">11:25—12:00</div><p><b>祁连山脚下骑马</b>，约 35 分钟；选择正规经营点、戴头盔、由马夫带领，新手不跑马。<a class="guide-link" href="#spot-daduma">骑马指南</a></p></div>
+          <div class="slot"><div class="time">12:05—12:55</div><p><b>正式午餐 50 分钟</b>：提前订餐，可选清炖/手抓羊肉、面片、土豆和当地蔬菜。</p></div>
+          <div class="slot"><div class="time">13:00—13:30</div><p><b>大都麻村方向秋景</b>：沿允许通行道路看草甸、林带和祁连雪峰，选择安全宽阔处停车，不驶入不明土路。<a class="guide-link" href="#spot-daduma">查看指南</a></p></div>
+          <div class="slot"><div class="time">13:30</div><p><b>硬离开节点</b>，立即前往七彩丹霞；遇雨雪、浓雾或结冰时取消村道绕行。</p></div>
+          <div class="slot"><div class="time">15:50—18:00</div><p><b>七彩丹霞</b>：按入口景交循环游览七彩云海台、锦绣台、虹霞台，把最后 40—50 分钟留给傍晚斜光；18:00 秋季闭园时间按参考上限执行。<a class="guide-link" href="#spot-danxia">查看指南</a></p></div>
+          <div class="slot"><div class="time">18:00—19:00</div><p>返回张掖市区。</p></div>
+          <div class="slot"><div class="time">19:20—20:50</div><p><b>张掖重点晚餐</b>：提前预订小份卷子鸡，再配炒拨拉、烤羊肉或搓鱼面；两人不要一次点齐所有主食。</p></div>
+          <div class="slot"><div class="time">20:50—21:30</div><p>甘州市场/钟鼓楼附近散步，夜市只补甜醅、杏皮水等一两样。</p></div>
         </div>
         <div class="grid2"><div class="mini"><h4>当天取舍顺序</h4><p>马蹄寺核心石窟 ＞ 七彩丹霞斜光 ＞ 正式午晚餐 ＞ 骑马 ＞ 大都麻村停留。延误时先缩短骑马和村内停留，不靠危险驾驶追回时间。</p></div><div class="mini"><h4>穿着与摄影</h4><p>马蹄寺穿防滑鞋、长裤和防风层；丹霞人物穿白、蓝、红更醒目。三十三天通道窄陡，不穿长裙或厚底鞋攀爬。</p></div></div>
       </article>
@@ -280,6 +282,58 @@
       <div class="callout ok"><strong>吃饭原则</strong>早餐统一留 20 分钟就近吃；正常午晚餐留 50—90 分钟。D6 西线因补给有限，提前从敦煌带一份完整晚餐，但仍留 40 分钟坐稳吃。每天至少一顿有蔬菜，羊肉和甜饮不要同一餐过量。</div>
     </section>
 
+    <section id="budget">
+      <div class="section-kicker">Budget planner · 2 people</div><h2>两人舒适省时版预算</h2>
+      <p class="sub">按两人同行、7 晚住宿、包车与自驾并用、正常吃正餐来估算。输入框可以直接改成你们的实际订单金额，页面会自动重算总额和人均；所有金额单位均为人民币。</p>
+      <div class="budget-summary">
+        <div><small>当前总预算</small><b id="budget-total">¥16,390</b></div>
+        <div><small>两人人均</small><b id="budget-per-person">¥8,195</b></div>
+        <div><small>住宿小计</small><b id="budget-stay">¥3,550</b></div>
+        <div><small>交通小计</small><b id="budget-transport">¥4,980</b></div>
+      </div>
+      <div class="callout ok"><strong>先看这个数字</strong>初始合计约 <b>16,390 元 / 两人</b>，暂未计入广州→兰州、嘉峪关→昆明两段机票，因为航班价格未知。把已购机票总价填入后，会立刻得到完整预算。预算按“节省时间、住得舒服、正餐不凑合”的思路预留，不是最低价方案。</div>
+      <div class="budget-grid">
+        <div class="budget-group"><h3>住宿 · 7 晚 <span data-budget-subtotal="stay">¥3,550</span></h3>
+          <label class="budget-item"><span>中川机场 · 1 晚<small>深夜接机、次日包车上门</small></span><span class="money-input">¥<input class="budget-cost" data-group="stay" type="number" min="0" step="10" value="300" aria-label="中川机场住宿"></span></label>
+          <label class="budget-item"><span>张掖 · 2 晚<small>大佛寺/钟鼓楼附近</small></span><span class="money-input">¥<input class="budget-cost" data-group="stay" type="number" min="0" step="10" value="1000" aria-label="张掖住宿"></span></label>
+          <label class="budget-item"><span>敦煌 · 3 晚<small>市中心或党河附近</small></span><span class="money-input">¥<input class="budget-cost" data-group="stay" type="number" min="0" step="10" value="1800" aria-label="敦煌住宿"></span></label>
+          <label class="budget-item"><span>嘉峪关 · 1 晚<small>市中心，兼顾关城与机场</small></span><span class="money-input">¥<input class="budget-cost" data-group="stay" type="number" min="0" step="10" value="450" aria-label="嘉峪关住宿"></span></label>
+        </div>
+        <div class="budget-group"><h3>交通 <span data-budget-subtotal="transport">¥4,980</span></h3>
+          <label class="budget-item"><span>两段机票 · 两人<small>已购总价填这里，目前按 0</small></span><span class="money-input">¥<input class="budget-cost" data-group="transport" type="number" min="0" step="10" value="0" aria-label="两段机票总价"></span></label>
+          <label class="budget-item"><span>中川→冰沟河→张掖包车<small>跨城、省时间，含司机当天服务估算</small></span><span class="money-input">¥<input class="budget-cost" data-group="transport" type="number" min="0" step="10" value="1600" aria-label="冰沟河跨城包车"></span></label>
+          <label class="budget-item"><span>张掖两日租车＋保险</span><span class="money-input">¥<input class="budget-cost" data-group="transport" type="number" min="0" step="10" value="900" aria-label="张掖租车"></span></label>
+          <label class="budget-item"><span>油费、高速、停车</span><span class="money-input">¥<input class="budget-cost" data-group="transport" type="number" min="0" step="10" value="550" aria-label="油费过路停车"></span></label>
+          <label class="budget-item"><span>张掖西→敦煌动车 · 两人</span><span class="money-input">¥<input class="budget-cost" data-group="transport" type="number" min="0" step="10" value="410" aria-label="张掖敦煌动车"></span></label>
+          <label class="budget-item"><span>敦煌西线包车/精品小团</span><span class="money-input">¥<input class="budget-cost" data-group="transport" type="number" min="0" step="10" value="800" aria-label="敦煌西线包车"></span></label>
+          <label class="budget-item"><span>敦煌→嘉峪关动车 · 两人</span><span class="money-input">¥<input class="budget-cost" data-group="transport" type="number" min="0" step="10" value="220" aria-label="敦煌嘉峪关动车"></span></label>
+          <label class="budget-item"><span>接送机与市内打车</span><span class="money-input">¥<input class="budget-cost" data-group="transport" type="number" min="0" step="10" value="500" aria-label="市内打车"></span></label>
+        </div>
+        <div class="budget-group"><h3>门票与体验 · 两人 <span data-budget-subtotal="tickets">¥2,860</span></h3>
+          <label class="budget-item"><span>冰沟河<small>按成人全价票估算</small></span><span class="money-input">¥<input class="budget-cost" data-group="tickets" type="number" min="0" step="2" value="240" aria-label="冰沟河门票"></span></label>
+          <label class="budget-item"><span>马蹄寺</span><span class="money-input">¥<input class="budget-cost" data-group="tickets" type="number" min="0" step="2" value="148" aria-label="马蹄寺门票"></span></label>
+          <label class="budget-item"><span>祁连山脚骑马</span><span class="money-input">¥<input class="budget-cost" data-group="tickets" type="number" min="0" step="10" value="300" aria-label="骑马"></span></label>
+          <label class="budget-item"><span>七彩丹霞门票＋景交</span><span class="money-input">¥<input class="budget-cost" data-group="tickets" type="number" min="0" step="2" value="216" aria-label="七彩丹霞门票景交"></span></label>
+          <label class="budget-item"><span>平山湖标准线</span><span class="money-input">¥<input class="budget-cost" data-group="tickets" type="number" min="0" step="2" value="260" aria-label="平山湖门票"></span></label>
+          <label class="budget-item"><span>张掖大佛寺</span><span class="money-input">¥<input class="budget-cost" data-group="tickets" type="number" min="0" step="2" value="80" aria-label="大佛寺门票"></span></label>
+          <label class="budget-item"><span>莫高窟常规票<small>已买，按 238 元/人</small></span><span class="money-input">¥<input class="budget-cost" data-group="tickets" type="number" min="0" step="2" value="476" aria-label="莫高窟门票"></span></label>
+          <label class="budget-item"><span>鸣沙山月牙泉门票</span><span class="money-input">¥<input class="budget-cost" data-group="tickets" type="number" min="0" step="2" value="220" aria-label="鸣沙山门票"></span></label>
+          <label class="budget-item"><span>骑骆驼/鞋套等可选体验</span><span class="money-input">¥<input class="budget-cost" data-group="tickets" type="number" min="0" step="10" value="240" aria-label="鸣沙山体验"></span></label>
+          <label class="budget-item"><span>玉门关门票＋景交</span><span class="money-input">¥<input class="budget-cost" data-group="tickets" type="number" min="0" step="2" value="180" aria-label="玉门关门票景交"></span></label>
+          <label class="budget-item"><span>敦煌雅丹门票＋景交</span><span class="money-input">¥<input class="budget-cost" data-group="tickets" type="number" min="0" step="2" value="240" aria-label="雅丹门票景交"></span></label>
+          <label class="budget-item"><span>嘉峪关关城＋景交</span><span class="money-input">¥<input class="budget-cost" data-group="tickets" type="number" min="0" step="2" value="260" aria-label="嘉峪关门票景交"></span></label>
+        </div>
+        <div class="budget-group"><h3>餐饮 <span data-budget-subtotal="food">¥3,000</span></h3>
+          <label class="budget-item"><span>8 天两人餐饮<small>早餐简洁，午晚餐正常点菜，含饮料零食</small></span><span class="money-input">¥<input class="budget-cost" data-group="food" type="number" min="0" step="50" value="3000" aria-label="餐饮预算"></span></label>
+        </div>
+        <div class="budget-group"><h3>购物与机动金 <span data-budget-subtotal="other">¥2,000</span></h3>
+          <label class="budget-item"><span>特产、伴手礼</span><span class="money-input">¥<input class="budget-cost" data-group="other" type="number" min="0" step="50" value="800" aria-label="伴手礼"></span></label>
+          <label class="budget-item"><span>临时加车、改签、药品等预备金</span><span class="money-input">¥<input class="budget-cost" data-group="other" type="number" min="0" step="50" value="1200" aria-label="预备金"></span></label>
+        </div>
+      </div>
+      <div class="callout"><strong>预算口径</strong>景区票价按当前公开成人价或常见组合估算；住宿、包车、租车、餐饮和铁路尚未出票部分是规划数，不是商家报价。节假日前后价格会浮动，确定订单后直接覆盖对应输入框即可。刷新页面会恢复初始估算，最终金额建议截图留存。</div>
+    </section>
+
     <section id="tickets">
       <div class="section-kicker">Booking board</div><h2>票务与交通作战表</h2>
       <div class="table-wrap"><table><thead><tr><th>日期</th><th>事项</th><th>当前状态</th><th>动作</th></tr></thead><tbody>
@@ -341,24 +395,26 @@
 (function(){
   'use strict';
   var spotMaps={
-    '冰沟河经典路线':{id:'spot-binggouhe-classic',keyword:'冰沟河生态文化旅游景区',city:'武威',label:'高德导航'},
-    '柴尔龙海／天池挑战路线':{id:'spot-binggouhe-tianchi',keyword:'冰沟河生态文化旅游景区',city:'武威',label:'导航至景区入口'},
-    '马蹄石窟群':{id:'spot-matisi',keyword:'马蹄寺石窟群旅游区',city:'张掖',label:'高德导航'},
-    '骑马＋大都麻村秋景':{id:'spot-daduma',keyword:'大都麻村',city:'张掖',label:'高德搜索'},
-    '七彩丹霞':{id:'spot-danxia',keyword:'张掖七彩丹霞旅游景区北入口',city:'张掖',label:'导航至北入口'},
-    '平山湖大峡谷':{id:'spot-pingshan',keyword:'平山湖大峡谷',city:'张掖',label:'高德导航'},
-    '张掖大佛寺':{id:'spot-dafo',keyword:'张掖大佛寺',city:'张掖',label:'高德导航'},
-    '莫高窟':{id:'spot-mogao',keyword:'莫高窟数字展示中心',city:'敦煌',label:'导航至数字中心'},
-    '鸣沙山月牙泉':{id:'spot-mingsha',keyword:'鸣沙山月牙泉景区中门',city:'敦煌',label:'导航至中门'},
-    '玉门关＋汉长城':{id:'spot-yumenguan',keyword:'玉门关遗址景区游客中心',city:'敦煌',label:'高德导航'},
-    '敦煌雅丹＋月夜观星':{id:'spot-yadan',keyword:'敦煌雅丹国家地质公园',city:'敦煌',label:'高德导航'},
-    '嘉峪关关城':{id:'spot-jiayuguan',keyword:'嘉峪关关城景区',city:'嘉峪关',label:'高德导航'}
+    '冰沟河经典路线':{id:'spot-binggouhe-classic',keyword:'冰沟河生态文化旅游景区',city:'武威',label:'高德导航',hours:'工作日 08:30—18:30；周末及法定节假日 08:00—18:30'},
+    '柴尔龙海／天池挑战路线':{id:'spot-binggouhe-tianchi',keyword:'冰沟河生态文化旅游景区',city:'武威',label:'导航至景区入口',hours:'同冰沟河：工作日 08:30—18:30；周末及节假日 08:00—18:30；天池线须 10:00 前抵达'},
+    '马蹄石窟群':{id:'spot-matisi',keyword:'马蹄寺石窟群旅游区',city:'张掖',label:'高德导航',hours:'常规参考 08:30—18:00；核心洞窟可能约 17:30 停止进入，前一日电话复核'},
+    '骑马＋大都麻村秋景':{id:'spot-daduma',keyword:'大都麻村',city:'张掖',label:'高德搜索',hours:'村落无统一门禁；骑马按经营点预约，建议仅在 09:00—17:30 明亮时段活动'},
+    '七彩丹霞':{id:'spot-danxia',keyword:'张掖七彩丹霞旅游景区北入口',city:'张掖',label:'导航至北入口',hours:'9—10 月秋季参考 06:30—18:00；深度游约 17:00 停止入园，出发前复核当日公告'},
+    '平山湖大峡谷':{id:'spot-pingshan',keyword:'平山湖大峡谷',city:'张掖',label:'高德导航',hours:'旺季参考 07:30—19:50；标准线约 17:30 停票、18:00 停止入园，以当天公告为准'},
+    '张掖大佛寺':{id:'spot-dafo',keyword:'张掖大佛寺',city:'张掖',label:'高德导航',hours:'07:00—18:30；季节调整以景区当日公告为准'},
+    '莫高窟':{id:'spot-mogao',keyword:'莫高窟数字展示中心',city:'敦煌',label:'导航至数字中心',hours:'4 月 1 日—11 月 30 日 08:00—18:00；售票时段 08:00—15:30，按票面预约时间入场'},
+    '鸣沙山月牙泉':{id:'spot-mingsha',keyword:'鸣沙山月牙泉景区中门',city:'敦煌',label:'导航至中门',hours:'现行售检票 06:00—19:30；日落后离园时间听现场广播'},
+    '玉门关＋汉长城':{id:'spot-yumenguan',keyword:'玉门关遗址景区游客中心',city:'敦煌',label:'高德导航',hours:'秋季现行参考 07:00—19:00；末班景交车以当日公告为准'},
+    '敦煌雅丹＋月夜观星':{id:'spot-yadan',keyword:'敦煌雅丹国家地质公园',city:'敦煌',label:'高德导航',hours:'现行 06:00—19:30；日落班约 18:30 起、末班约 19:30，随日落时间调整'},
+    '嘉峪关关城':{id:'spot-jiayuguan',keyword:'嘉峪关关城景区',city:'嘉峪关',label:'高德导航',hours:'08:00—18:30；18:00 停售，18:30 停止入园'}
   };
   document.querySelectorAll('.spot').forEach(function(spot){
     var heading=spot.querySelector('h3');
     if(!heading||!spotMaps[heading.textContent.trim()]) return;
     var item=spotMaps[heading.textContent.trim()];
     spot.id=item.id;
+    var meta=spot.querySelector('.spot-meta');
+    if(meta&&item.hours){var hours=document.createElement('div');hours.className='hours';hours.innerHTML='<b>开放 / 关门</b>'+item.hours;meta.appendChild(hours);}
     var top=spot.querySelector('.spot-top');
     var rating=top&&top.querySelector('.rating');
     if(!top||!rating) return;
@@ -368,11 +424,31 @@
     link.href='https://uri.amap.com/search?keyword='+encodeURIComponent(item.keyword)+'&city='+encodeURIComponent(item.city)+'&view=map&src=hexizoulang-roadbook&callnative=1';
     link.setAttribute('aria-label','在高德地图中打开'+heading.textContent.trim());actions.appendChild(link);
   });
+  var matisiTime=document.querySelector('#spot-matisi .spot-meta div:first-child');if(matisiTime)matisiTime.innerHTML='<b>本日时长</b>约 1 小时 40 分';
+  var dadumaMeta=document.querySelectorAll('#spot-daduma .spot-meta div');if(dadumaMeta[0])dadumaMeta[0].innerHTML='<b>骑马</b>约 35 分钟';if(dadumaMeta[1])dadumaMeta[1].innerHTML='<b>秋景</b>约 30 分钟';
+  var dadumaDeadline=document.querySelectorAll('#spot-daduma li');dadumaDeadline.forEach(function(li){if(li.textContent.indexOf('14:20 必须')>=0)li.textContent='13:30 必须转向七彩丹霞，不继续深入。';});
+  var danxiaTime=document.querySelector('#spot-danxia .spot-meta div:first-child');if(danxiaTime)danxiaTime.innerHTML='<b>本日时长</b>约 2 小时 10 分';
+  var danxiaCallout=document.querySelector('#spot-danxia .callout strong');if(danxiaCallout)danxiaCallout.textContent='本日约 2 小时 10 分';
+  document.querySelectorAll('#food td').forEach(function(td){td.innerHTML=td.innerHTML.replace('D3 午餐 60 分钟','D3 午餐 50 分钟');});
   document.querySelectorAll('.day').forEach(function(day){
     var button=document.createElement('button');button.type='button';button.className='day-toggle';button.textContent='收起当天';
     var titleBox=day.querySelector('.day-head>div:nth-child(2)');if(titleBox) titleBox.appendChild(button);
     button.addEventListener('click',function(){var collapsed=day.classList.toggle('collapsed');button.textContent=collapsed?'展开当天':'收起当天';});
   });
+  var budgetInputs=document.querySelectorAll('.budget-cost');
+  function money(value){return '¥'+Math.round(value).toLocaleString('zh-CN');}
+  function updateBudget(){
+    var total=0,groups={stay:0,transport:0,tickets:0,food:0,other:0};
+    budgetInputs.forEach(function(input){var value=Math.max(0,Number(input.value)||0);total+=value;groups[input.dataset.group]=(groups[input.dataset.group]||0)+value;});
+    document.querySelectorAll('[data-budget-subtotal]').forEach(function(el){el.textContent=money(groups[el.dataset.budgetSubtotal]||0);});
+    var totalEl=document.getElementById('budget-total'),perEl=document.getElementById('budget-per-person'),stayEl=document.getElementById('budget-stay'),transportEl=document.getElementById('budget-transport');
+    if(totalEl) totalEl.textContent=money(total);
+    if(perEl) perEl.textContent=money(total/2);
+    if(stayEl) stayEl.textContent=money(groups.stay);
+    if(transportEl) transportEl.textContent=money(groups.transport);
+  }
+  budgetInputs.forEach(function(input){input.addEventListener('input',updateBudget);});
+  updateBudget();
 })();
 </script>
 </body>
