@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="color-scheme" content="light">
+  <title>河西走廊互动路书｜离线版｜2026.09.24—10.01</title>
+  <style>
+    :root{--ink:#28211b;--muted:#75685d;--paper:#fbf7ef;--card:#fffdf8;--sand:#dca55d;--terra:#a94d35;--jade:#537b70;--night:#243b47;--line:#dfd2c2;--soft:#f2e7d7;--warn:#fff1d6;--ok:#e8f1ea;--shadow:0 18px 45px rgba(77,45,28,.12)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:linear-gradient(180deg,#e9d8bd 0,#f7f0e5 16rem,#f3eadf 100%);color:var(--ink);font:16px/1.72 system-ui,-apple-system,"Segoe UI","Microsoft YaHei","PingFang SC",sans-serif}
+    a{color:var(--terra);text-decoration-thickness:1px;text-underline-offset:3px}.book{max-width:1100px;margin:auto;background:var(--paper);box-shadow:var(--shadow)}
+    .cover{min-height:86vh;padding:clamp(28px,7vw,88px);display:grid;align-content:space-between;position:relative;overflow:hidden;color:#fff;background:linear-gradient(155deg,rgba(26,41,46,.22),rgba(70,30,20,.6)),radial-gradient(circle at 73% 22%,#f4c47a 0 8%,transparent 8.4%),linear-gradient(165deg,#5c8791 0 37%,#d29155 37.3% 54%,#a85d40 54.2% 66%,#5c352b 66.3% 100%)}
+    .cover:after{content:"";position:absolute;left:-5%;right:-5%;bottom:16%;height:34%;background:linear-gradient(155deg,transparent 0 38%,rgba(255,235,191,.22) 38.4% 46%,transparent 46.4% 55%,rgba(255,227,174,.17) 55.4% 64%,transparent 64.4%);transform:skewY(-4deg);pointer-events:none}
+    .eyebrow{letter-spacing:.24em;font-weight:700;font-size:.82rem;text-transform:uppercase}.cover h1{font-family:Georgia,"STSong",serif;font-size:clamp(3.1rem,10vw,7rem);line-height:.96;margin:.55rem 0 1.1rem;letter-spacing:.03em;text-shadow:0 5px 30px rgba(41,24,15,.28)}
+    .cover .lead{max-width:39rem;font-size:clamp(1.05rem,2.3vw,1.38rem);margin:0;color:#fff7ea}.route{display:flex;flex-wrap:wrap;gap:.55rem;margin-top:1.6rem}.route span{padding:.32rem .7rem;border:1px solid rgba(255,255,255,.5);border-radius:999px;background:rgba(37,25,21,.14);backdrop-filter:blur(3px)}
+    .cover-foot{display:flex;justify-content:space-between;align-items:end;gap:2rem;z-index:1}.cover-date{font-size:1.05rem}.stamp{border:2px solid rgba(255,255,255,.7);padding:.5rem .65rem;transform:rotate(-4deg);font-weight:800;letter-spacing:.12em}
+    nav{position:sticky;top:0;z-index:9;background:rgba(255,253,248,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line);padding:.7rem 1rem;overflow:auto;white-space:nowrap}nav a{display:inline-block;margin:.1rem .75rem;color:var(--ink);text-decoration:none;font-size:.92rem}nav a:hover{color:var(--terra)}
+    main{padding:clamp(24px,5vw,64px)}section{scroll-margin-top:70px;margin:0 0 4.5rem}.section-kicker{color:var(--terra);font-weight:800;letter-spacing:.14em;font-size:.8rem;text-transform:uppercase}h2{font:700 clamp(2rem,5vw,3.4rem)/1.15 Georgia,"STSong",serif;margin:.3rem 0 1.3rem}h3{font:700 1.45rem/1.35 Georgia,"STSong",serif;margin:2rem 0 .8rem}h4{margin:1.25rem 0 .35rem;font-size:1.02rem}.sub{color:var(--muted);max-width:55rem}
+    .facts{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:16px;overflow:hidden;margin:1.6rem 0}.fact{padding:1rem;background:var(--card)}.fact b{display:block;color:var(--terra);font-size:1.15rem}.fact small{color:var(--muted)}
+    .callout{border-left:5px solid var(--sand);background:var(--warn);padding:1rem 1.15rem;border-radius:5px 14px 14px 5px;margin:1.2rem 0}.callout.ok{border-color:var(--jade);background:var(--ok)}.callout strong{display:block;margin-bottom:.2rem}.small{font-size:.9rem;color:var(--muted)}
+    .summary{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem}.summary-card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:1rem}.summary-card b{color:var(--terra)}.summary-card .d{font-size:.78rem;color:var(--muted);letter-spacing:.05em}.summary-card p{margin:.35rem 0 0;font-size:.93rem}
+    .day{border-top:7px solid var(--terra);border-radius:18px;background:var(--card);box-shadow:0 10px 25px rgba(78,50,31,.07);padding:clamp(18px,4vw,38px);margin:2rem 0 3rem;break-inside:avoid-page}.day-head{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:1rem;border-bottom:1px solid var(--line);padding-bottom:1.2rem;margin-bottom:1.2rem}.day-no{width:4rem;height:4rem;display:grid;place-items:center;border-radius:50%;background:var(--terra);color:#fff;font:700 1.25rem Georgia,serif}.day h3{margin:0;font-size:clamp(1.45rem,3vw,2rem)}.lodging{text-align:right;color:var(--muted);font-size:.9rem}.lodging b{display:block;color:var(--ink)}
+    .timeline{position:relative;margin:1.1rem 0}.timeline:before{content:"";position:absolute;left:7.6rem;top:.3rem;bottom:.3rem;width:1px;background:var(--line)}.slot{display:grid;grid-template-columns:6.9rem minmax(0,1fr);gap:1.4rem;padding:.48rem 0}.time{font-weight:800;color:var(--terra);font-variant-numeric:tabular-nums;text-align:right;white-space:nowrap;font-size:.94rem}.slot p{margin:0;min-width:0}.slot em{font-style:normal;color:var(--muted)}
+    .grid2{display:grid;grid-template-columns:1fr 1fr;gap:1rem}.mini{background:#f7efe3;border:1px solid var(--line);padding:.9rem 1rem;border-radius:12px}.mini h4{margin:0 0 .35rem}.mini p,.mini ul{margin:.25rem 0}.tags{display:flex;gap:.4rem;flex-wrap:wrap;margin:.7rem 0}.tag{font-size:.78rem;padding:.15rem .5rem;border-radius:999px;background:var(--soft);color:#664b37}
+    .spot{border:1px solid var(--line);background:var(--card);border-radius:18px;padding:clamp(18px,3vw,30px);margin:1.4rem 0;break-inside:avoid-page}.spot-top{display:flex;justify-content:space-between;gap:1rem;align-items:start}.spot h3{margin:.1rem 0}.rating{white-space:nowrap;background:var(--night);color:#fff;padding:.3rem .65rem;border-radius:999px;font-size:.8rem}.spot-meta{display:grid;grid-template-columns:repeat(4,1fr);gap:.7rem;margin:1rem 0}.spot-meta div{background:#f7efe3;border-radius:10px;padding:.6rem .7rem;font-size:.87rem}.spot-meta b{display:block;color:var(--terra)}
+    ul{padding-left:1.15rem}li{margin:.24rem 0}.checklist{columns:2;column-gap:2rem}.checklist li{break-inside:avoid;list-style:disc;padding-left:.2rem}.table-wrap{overflow:auto;border:1px solid var(--line);border-radius:14px}table{border-collapse:collapse;width:100%;min-width:680px;background:var(--card)}th,td{padding:.8rem .9rem;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}th{background:#eee0cc;color:#583b2e}tr:last-child td{border-bottom:0}
+    .sources{font-size:.9rem}.sources li{margin:.55rem 0}.footer{padding:2rem clamp(24px,5vw,64px) 4rem;background:#2d3d40;color:#edf1eb}.footer a{color:#ffd693}.print-note{display:none}
+    @media(max-width:760px){.cover{min-height:76vh}.cover-foot{align-items:start}.stamp{display:none}.facts,.summary,.spot-meta{grid-template-columns:1fr 1fr}.grid2{grid-template-columns:1fr}.day-head{grid-template-columns:auto 1fr}.lodging{grid-column:1/-1;text-align:left;padding-left:5rem}.timeline:before{left:6.45rem}.slot{grid-template-columns:5.8rem minmax(0,1fr);gap:1.2rem}.time{font-size:.82rem}.checklist{columns:1}main{padding-left:18px;padding-right:18px}}
+    .offline-toolbar{position:fixed;z-index:30;left:50%;bottom:max(12px,env(safe-area-inset-bottom));transform:translateX(-50%);width:min(94vw,760px);display:flex;align-items:center;gap:.45rem;padding:.55rem;background:rgba(35,48,50,.96);color:#fff;border:1px solid rgba(255,255,255,.2);border-radius:18px;box-shadow:0 16px 45px rgba(25,20,16,.28);backdrop-filter:blur(14px)}
+    .offline-state{display:flex;align-items:center;gap:.55rem;min-width:145px;padding:0 .45rem}.offline-state b,.offline-state small{display:block;line-height:1.25}.offline-state small{color:#cdd8d5;font-size:.72rem}.offline-dot{width:.65rem;height:.65rem;flex:0 0 auto;border-radius:50%;background:#88c99b;box-shadow:0 0 0 4px rgba(136,201,155,.16)}
+    .offline-actions{display:flex;gap:.35rem;overflow:auto;scrollbar-width:none}.offline-actions::-webkit-scrollbar{display:none}.offline-actions a,.offline-actions button{appearance:none;border:0;border-radius:11px;background:rgba(255,255,255,.12);color:#fff;padding:.55rem .7rem;font:inherit;font-size:.78rem;white-space:nowrap;text-decoration:none;cursor:pointer}.offline-actions a:hover,.offline-actions button:hover{background:rgba(255,255,255,.22)}
+    .day-toggle{appearance:none;border:1px solid var(--line);background:var(--soft);color:var(--ink);border-radius:999px;padding:.32rem .75rem;margin-top:.45rem;font:inherit;font-size:.78rem;cursor:pointer}.day.collapsed>.timeline,.day.collapsed>.grid2,.day.collapsed>.callout,.day.collapsed>.route-choice{display:none}.day.collapsed{padding-bottom:18px}.day.collapsed .day-head{margin-bottom:0;border-bottom:0;padding-bottom:0}
+    .offline-note{display:flex;align-items:flex-start;gap:.65rem;background:#e7f2ea;border:1px solid #bdd6c4;border-radius:14px;padding:.9rem 1rem;margin:1rem 0 1.5rem}.offline-note b{display:block;color:#315d49}.offline-note p{margin:0;color:#50645b;font-size:.9rem}.offline-note .icon{font-size:1.3rem}
+    .guide-extra{margin-top:1rem;padding-top:1rem;border-top:1px dashed var(--line);display:grid;grid-template-columns:repeat(3,1fr);gap:.75rem}.guide-extra>div{background:#fffaf2;border:1px solid #eadcca;border-radius:12px;padding:.8rem .9rem}.guide-extra b{display:block;color:var(--terra);margin-bottom:.25rem}.guide-extra p{margin:0;font-size:.9rem;color:#5f5349}
+    .guide-link,.map-link{display:inline-flex;align-items:center;justify-content:center;gap:.3rem;border-radius:999px;text-decoration:none;font-weight:750;line-height:1.2}.guide-link{margin-left:.45rem;padding:.28rem .62rem;background:#edf3ef;border:1px solid #bfd2c7;color:#356256;font-size:.78rem;white-space:nowrap}.guide-link:hover{background:#dcebe2}.map-link{padding:.42rem .72rem;background:#fff4df;border:1px solid #e6bf7f;color:#81501d;font-size:.78rem}.map-link:hover{background:#fbe8c4}.spot-actions{display:flex;flex-direction:column;align-items:flex-end;gap:.45rem;white-space:nowrap}.spot[id]{scroll-margin-top:76px}.route-choice{margin:1.2rem 0;border:1px solid #d7bd91;background:#fff8e9;border-radius:14px;overflow:hidden}.route-choice summary{cursor:pointer;padding:.9rem 1rem;font-weight:800;color:#744320;background:#f8e8cb}.route-choice[open] summary{border-bottom:1px solid #e2cda9}.route-choice .route-body{padding:.5rem 1rem 1rem}.route-choice .timeline{margin:.65rem 0}.nav-note{font-size:.78rem;color:var(--muted);margin:.5rem 0 0}
+    body{padding-bottom:92px}
+    @media(max-width:760px){.guide-extra{grid-template-columns:1fr}}
+    @media(max-width:620px){.offline-toolbar{width:calc(100vw - 16px);bottom:max(8px,env(safe-area-inset-bottom));border-radius:15px}.offline-state{min-width:112px}.offline-state b{font-size:.82rem}.offline-state small{font-size:.67rem}.offline-actions a,.offline-actions button{padding:.5rem .62rem}.spot-top{align-items:flex-start}.spot-actions{gap:.35rem}}
+    @media print{@page{size:A4;margin:14mm 13mm 15mm}body{background:#fff;font-size:10pt;padding-bottom:0}.offline-toolbar,.day-toggle,.guide-link,.map-link{display:none!important}.book{max-width:none;box-shadow:none}nav{display:none}.cover{min-height:255mm;page-break-after:always;-webkit-print-color-adjust:exact;print-color-adjust:exact}.cover h1{font-size:54pt}main{padding:0}.print-note{display:block}.day{box-shadow:none;margin:1rem 0 1.4rem;padding:15px}.day.collapsed>.timeline,.day.collapsed>.grid2,.day.collapsed>.callout,.day.collapsed>.route-choice{display:block}.route-choice{break-inside:avoid}.route-choice>summary{list-style:none}.route-choice:not([open])>.route-body{display:block}.spot{padding:15px}.guide-extra{grid-template-columns:repeat(3,1fr)}section{margin-bottom:2rem;break-before:page}#overview{break-before:auto}.day,.spot,.callout,.mini,.summary-card{break-inside:avoid}a{color:inherit;text-decoration:none}.footer{background:#fff;color:#222;padding:1rem 0}.footer a{color:#222}.summary{grid-template-columns:repeat(4,1fr)}h2{font-size:24pt}h3{font-size:15pt}}
+  </style>
+</head>
+<body>
+<aside class="offline-toolbar" aria-label="离线路书工具栏">
+  <div class="offline-state"><span class="offline-dot"></span><div><b>离线可用</b><small>完整路书 · 本地文件</small></div></div>
+  <div class="offline-actions">
+    <a href="#schedule">逐日行程</a><a href="#tickets">票务</a><a href="#packing">行李</a>
+    <button type="button" id="expandAll">展开全部</button><button type="button" id="printBook">打印/PDF</button>
+  </div>
+</aside>
+<article class="book">
+  <header class="cover">
+    <div>
+      <div class="eyebrow">Silk Road · Gansu · 8 days</div>
+      <h1>河西走廊<br>之旅</h1>
+      <p class="lead">从祁连山森林与高山湖泊出发，穿过石窟、草原、彩色丘陵与峡谷，抵达敦煌千年壁画、大漠星空和戈壁雄关。</p>
+      <div class="route"><span>广州</span><span>兰州中川</span><span>冰沟河</span><span>张掖</span><span>敦煌</span><span>嘉峪关</span><span>昆明</span></div>
+    </div>
+    <div class="cover-foot"><div class="cover-date"><b>2026.09.24 — 10.01</b><br>8 天 7 晚 · 逐小时执行版</div><div class="stamp">旅行手册</div></div>
+  </header>
+
+  <nav aria-label="目录"><a href="#overview">总览</a><a href="#schedule">逐日行程</a><a href="#spots">景点指南</a><a href="#food">餐饮住宿</a><a href="#tickets">票务交通</a><a href="#packing">装备清单</a><a href="#sources">核实来源</a></nav>
+
+  <main>
+    <section id="overview">
+      <div class="section-kicker">Before you go</div><h2>先看这一页</h2>
+      <div class="offline-note"><span class="icon">✓</span><div><b>这是完整单文件离线版</b><p>行程、景点介绍、票务提醒与装备清单均已写入本文件。文末官方来源链接只有在需要更新信息时才会联网。</p></div></div>
+      <p class="sub">这是一份可以照着走的执行版。时间以 2026 年 9 月 8 日可核实的官方信息和现行列车时刻为基准；尚未开售的铁路班次、9 月下旬季节性运营时间均标成“目标窗口”，最终只认票面和景区当日公告。</p>
+      <div class="facts"><div class="fact"><b>8 天 7 晚</b><small>中川机场 1 · 张掖 2 · 敦煌 3 · 嘉峪关 1</small></div><div class="fact"><b>山地＋荒漠</b><small>冰沟河 · 祁连山 · 丹霞 · 戈壁</small></div><div class="fact"><b>3 项已锁定</b><small>9/24 航班 · 9/28 莫高窟 · 10/1 航班</small></div><div class="fact"><b>吃饭不赶场</b><small>早餐 20 分钟 · 正餐约 50—90 分钟</small></div></div>
+      <div class="callout"><strong>两处仍需按票面微调</strong>① 9/24 按 19:00 起飞、约 22:15 落地估算，实际以航司为准。② 莫高窟只确认“早场”，正文暂按 09:00 场编排；官方实行实名分时预约并要求提前 30 分钟抵达，不能把网上的宽松个案当作保证。</div>
+      <div class="callout ok"><strong>行程逻辑</strong>落地住中川机场附近，第二天包车直达冰沟河再去张掖；张掖租车两天，依次完成马蹄寺、骑马、大都麻村、七彩丹霞、大佛寺和平山湖；敦煌保留 3 晚和一晚观星；嘉峪关放在返程前。除 D2 天池挑战备选外，每天不早于 07:30 起床。</div>
+      <h3>一眼看懂 8 天</h3>
+      <div class="summary">
+        <div class="summary-card"><div class="d">D1 · 9/24 周四</div><b>广州 → 兰州中川</b><p>19:00 起飞，落地只住机场旁，为第二天保留睡眠。</p></div>
+        <div class="summary-card"><div class="d">D2 · 9/25 周五</div><b>冰沟河 → 张掖</b><p>主线走森林峡谷经典线；天池挑战线作为早起备选。</p></div>
+        <div class="summary-card"><div class="d">D3 · 9/26 周六</div><b>马蹄寺＋大都麻＋丹霞</b><p>石窟、骑马、祁连秋景和丹霞斜光，一天四种体验。</p></div>
+        <div class="summary-card"><div class="d">D4 · 9/27 周日</div><b>大佛寺＋平山湖 → 敦煌</b><p>清晨看西夏卧佛，白天进峡谷；16:50 动车去敦煌。</p></div>
+        <div class="summary-card"><div class="d">D5 · 9/28 周一</div><b>莫高窟＋鸣沙山</b><p>上午壁画彩塑，午休后进沙漠等约 19:29 日落。</p></div>
+        <div class="summary-card"><div class="d">D6 · 9/29 周二</div><b>敦煌西线＋观星</b><p>玉门关、汉长城、雅丹日落；返程前短时看月夜星空。</p></div>
+        <div class="summary-card"><div class="d">D7 · 9/30 周三</div><b>敦煌 → 嘉峪关</b><p>选择约 08:40 的较晚动车；下午完整看关城。</p></div>
+        <div class="summary-card"><div class="d">D8 · 10/1 周四</div><b>嘉峪关 → 昆明</b><p>国庆首日不加景点，11:00 前到机场，14:00 起飞。</p></div>
+      </div>
+    </section>
+
+    <section id="schedule">
+      <div class="section-kicker">Hour by hour</div><h2>逐日行程</h2>
+
+      <article class="day"><div class="day-head"><div class="day-no">D1</div><div><h3>9 月 24 日 周四｜广州 → 兰州中川机场</h3><div class="tags"><span class="tag">夜航</span><span class="tag">机场住宿</span><span class="tag">不进市区</span></div></div><div class="lodging">住宿<b>中川机场 15 分钟范围内</b></div></div>
+        <div class="timeline">
+          <div class="slot"><div class="time">16:30</div><p>抵达广州白云机场，办理值机和托运。<em>身份证、充电宝、药物和薄外套放随身包。</em></p></div>
+          <div class="slot"><div class="time">17:30—18:20</div><p><b>机场晚餐</b>，留足 50 分钟坐下吃；选择米饭、面或清淡套餐，不用高油高辣开启旅程。</p></div>
+          <div class="slot"><div class="time">18:20</div><p>到登机口，装满水杯，确认机场酒店接机电话。</p></div>
+          <div class="slot"><div class="time">19:00</div><p><b>广州起飞前往兰州</b>（已确认起飞时刻）。</p></div>
+          <div class="slot"><div class="time">22:15</div><p>预计落地兰州中川机场。<em>这是按约 3 小时 15 分估算，请以航司票面为准。</em></p></div>
+          <div class="slot"><div class="time">22:15—23:00</div><p>取行李并联系酒店接机；不进兰州市区，也不临时改乘城际铁路。</p></div>
+          <div class="slot"><div class="time">23:10—23:30</div><p>乘酒店接驳车/网约车抵达机场酒店，办理入住。</p></div>
+          <div class="slot"><div class="time">23:30</div><p>洗漱即睡；确认明早 08:15 包车在酒店门口接人。</p></div>
+        </div>
+        <div class="grid2"><div class="mini"><h4>选酒店</h4><p>优先航站楼 15 分钟内、提供免费接送机、可早退房的酒店；早餐不必丰富，第二天只留 20 分钟就近解决。</p></div><div class="mini"><h4>随身穿</h4><p>广州短袖＋长裤，薄外套不要托运。中川夜间明显比广州凉，出舱前穿好外层。</p></div></div>
+      </article>
+
+      <article class="day"><div class="day-head"><div class="day-no">D2</div><div><h3>9 月 25 日 周五｜中川机场 → 冰沟河 → 张掖</h3><div class="tags"><span class="tag">跨城包车</span><span class="tag">经典线主方案</span><span class="tag">天池备选</span></div></div><div class="lodging">住宿<b>张掖大佛寺/钟鼓楼附近</b></div></div>
+        <div class="timeline">
+          <div class="slot"><div class="time">07:30</div><p>起床。</p></div>
+          <div class="slot"><div class="time">07:40—08:00</div><p><b>酒店附近早餐</b>，20 分钟；少油、吃够碳水，避免空腹坐长途车。</p></div>
+          <div class="slot"><div class="time">08:00—08:15</div><p>退房、装行李，确认司机资质、保险和当天“中川机场酒店—冰沟河—张掖酒店”全程费用。</p></div>
+          <div class="slot"><div class="time">08:15</div><p>包车出发，途中服务区休息一次；不返回武威或高铁站换乘。</p></div>
+          <div class="slot"><div class="time">11:20</div><p>预计抵达冰沟河。山区天气和道路会造成浮动，实际抵达晚于 12:00 时主动缩短末段。</p></div>
+          <div class="slot"><div class="time">11:20—12:10</div><p><b>午餐 50 分钟</b>，同时换票、上洗手间、整理防风层；热食优先，另带能量棒应急。</p></div>
+          <div class="slot"><div class="time">12:10—16:20</div><p><b>经典路线</b>：马兰花草原 → 尼美拉峡谷 → 祁连森林 → 半亩方塘 → 大汗营地 → 冰沟老街。以当天开放步道和景交线路为准。<a class="guide-link" href="#spot-binggouhe-classic">查看指南</a></p></div>
+          <div class="slot"><div class="time">16:20—16:40</div><p>乘景交车返回游客中心、补水、上洗手间。</p></div>
+          <div class="slot"><div class="time">16:40</div><p>包车直接前往张掖；车上休息，不再加武威市区景点。</p></div>
+          <div class="slot"><div class="time">20:30</div><p>预计抵达张掖酒店，办理入住；若租车公司支持送车上门，可今晚完成验车和拍照。</p></div>
+          <div class="slot"><div class="time">20:50—22:10</div><p><b>张掖第一顿正式晚餐</b>：炒拨拉、烤羊肉、搓鱼面、当地时蔬；今晚不以零食或外卖代替正餐。</p></div>
+          <div class="slot"><div class="time">22:20</div><p>回酒店休息。</p></div>
+        </div>
+        <details class="route-choice"><summary>备选 B｜柴尔龙海／天池挑战线（点开查看完整时间表）</summary><div class="route-body">
+          <p class="small">这条线会打破“每天最早 07:30 起床”的约定。湖面海拔约 4008 米，往返约 20km；只有天气、道路、预约和两人身体状态都合格时才执行。<a class="guide-link" href="#spot-binggouhe-tianchi">查看天池指南</a></p>
+          <div class="timeline">
+            <div class="slot"><div class="time">05:40</div><p>起床；这是全程唯一需要早于 07:30 的备选日。</p></div>
+            <div class="slot"><div class="time">05:50—06:10</div><p><b>早餐 20 分钟</b>，吃碳水和蛋白质，另带午餐、电解质饮料和能量食物。</p></div>
+            <div class="slot"><div class="time">06:10</div><p>包车从中川机场酒店出发。</p></div>
+            <div class="slot"><div class="time">09:20—09:40</div><p>抵达冰沟河，核验预约、换票、确认天池路线是否开放。</p></div>
+            <div class="slot"><div class="time">09:50</div><p>乘接驳进入并开始徒步；前 3km 保持能正常说话的速度。</p></div>
+            <div class="slot"><div class="time">12:20—12:50</div><p><b>路上午餐 30 分钟</b>，同时评估头痛、恶心、眩晕和呼吸状态。</p></div>
+            <div class="slot"><div class="time">13:30</div><p>计划抵达柴尔龙海；只停留约 30 分钟。</p></div>
+            <div class="slot"><div class="time">14:00</div><p><b>强制下撤</b>，无论是否拍够都不再继续上行。</p></div>
+            <div class="slot"><div class="time">16:30—17:30</div><p>返回接驳区域；具体取决于体力和路况。</p></div>
+            <div class="slot"><div class="time">最迟 18:00</div><p>离开景区前往张掖。</p></div>
+            <div class="slot"><div class="time">约 22:00</div><p>抵达张掖，办理入住。</p></div>
+            <div class="slot"><div class="time">22:00—22:50</div><p><b>热晚餐</b>，以汤面、清炖羊肉和蔬菜为主，随后立即休息。</p></div>
+          </div>
+        </div></details>
+        <div class="callout"><strong>天池线执行底线</strong>官方建议 10:00 前抵达。任何一人出现持续加重的头痛、恶心、眩晕、步态不稳、胸闷或异常气促，立即下撤；便携氧气不能作为继续上升的理由。</div>
+      </article>
+
+      <article class="day"><div class="day-head"><div class="day-no">D3</div><div><h3>9 月 26 日 周六｜马蹄寺＋骑马＋大都麻村＋七彩丹霞</h3><div class="tags"><span class="tag">租车自驾</span><span class="tag">祁连秋景</span><span class="tag">丹霞斜光</span></div></div><div class="lodging">住宿<b>张掖原酒店续住</b></div></div>
+        <div class="timeline">
+          <div class="slot"><div class="time">07:30</div><p>起床，查看肃南山区、Y334 沿线和丹霞逐小时天气。</p></div>
+          <div class="slot"><div class="time">07:35—07:55</div><p><b>酒店附近早餐</b>，20 分钟。</p></div>
+          <div class="slot"><div class="time">07:55—08:05</div><p>检查油量、轮胎和导航离线地图；每人带 1—1.5L 水。</p></div>
+          <div class="slot"><div class="time">08:05</div><p>自驾前往马蹄寺，山路不抢行、不超车赶时间。</p></div>
+          <div class="slot"><div class="time">09:30—09:40</div><p>停车、换票、上洗手间。</p></div>
+          <div class="slot"><div class="time">09:40—11:40</div><p><b>马蹄寺核心游览</b>：北寺崖壁全景 → 三十三天石窟 → 藏佛殿/马蹄殿；外围区域按时间取舍。<a class="guide-link" href="#spot-matisi">查看指南</a></p></div>
+          <div class="slot"><div class="time">11:45—12:25</div><p><b>祁连山脚下骑马</b>，限 40 分钟左右；选择正规经营点、戴头盔、由马夫带领，新手不跑马。<a class="guide-link" href="#spot-daduma">骑马指南</a></p></div>
+          <div class="slot"><div class="time">12:30—13:30</div><p><b>正式午餐 60 分钟</b>：提前订餐，可选清炖/手抓羊肉、面片、土豆和当地蔬菜。</p></div>
+          <div class="slot"><div class="time">13:30—14:20</div><p><b>大都麻村方向秋景</b>：沿允许通行道路看草甸、林带和祁连雪峰，选择安全宽阔处停车，不驶入不明土路。<a class="guide-link" href="#spot-daduma">查看指南</a></p></div>
+          <div class="slot"><div class="time">14:20</div><p><b>硬离开节点</b>，立即前往七彩丹霞；遇雨雪、浓雾或结冰时取消村道绕行。</p></div>
+          <div class="slot"><div class="time">16:40—19:10</div><p><b>七彩丹霞</b>：按入口景交循环游览七彩云海台、锦绣台、虹霞台，把最后 45—60 分钟留给傍晚斜光。<a class="guide-link" href="#spot-danxia">查看指南</a></p></div>
+          <div class="slot"><div class="time">19:10—20:10</div><p>返回张掖市区。</p></div>
+          <div class="slot"><div class="time">20:20—21:50</div><p><b>张掖重点晚餐</b>：提前预订小份卷子鸡，再配炒拨拉、烤羊肉或搓鱼面；两人不要一次点齐所有主食。</p></div>
+          <div class="slot"><div class="time">21:50—22:30</div><p>甘州市场/钟鼓楼附近散步，夜市只补甜醅、杏皮水等一两样。</p></div>
+        </div>
+        <div class="grid2"><div class="mini"><h4>当天取舍顺序</h4><p>马蹄寺核心石窟 ＞ 七彩丹霞斜光 ＞ 正式午晚餐 ＞ 骑马 ＞ 大都麻村停留。延误时先缩短骑马和村内停留，不靠危险驾驶追回时间。</p></div><div class="mini"><h4>穿着与摄影</h4><p>马蹄寺穿防滑鞋、长裤和防风层；丹霞人物穿白、蓝、红更醒目。三十三天通道窄陡，不穿长裙或厚底鞋攀爬。</p></div></div>
+      </article>
+
+      <article class="day"><div class="day-head"><div class="day-no">D4</div><div><h3>9 月 27 日 周日｜张掖大佛寺＋平山湖大峡谷 → 敦煌</h3><div class="tags"><span class="tag">西夏</span><span class="tag">峡谷徒步</span><span class="tag">16:50 直达动车</span></div></div><div class="lodging">住宿<b>敦煌市中心/党河附近</b></div></div>
+        <div class="timeline">
+          <div class="slot"><div class="time">07:30</div><p>起床。</p></div>
+          <div class="slot"><div class="time">07:35—07:55</div><p><b>酒店附近特色早餐</b>，20 分钟；牛肉小饭或臊面二选一。</p></div>
+          <div class="slot"><div class="time">07:55—08:05</div><p>退房，行李全部放进租车，贵重物品随身。</p></div>
+          <div class="slot"><div class="time">08:10—09:10</div><p><b>张掖大佛寺</b>：先看大佛殿与卧佛，再看壁画、木构；弥陀千佛塔和外围展区按时间取舍。<a class="guide-link" href="#spot-dafo">查看指南</a></p></div>
+          <div class="slot"><div class="time">09:10</div><p>自驾前往平山湖大峡谷。</p></div>
+          <div class="slot"><div class="time">10:20—10:35</div><p>抵达、换票、乘景交车，向工作人员确认标准线出口与当天封闭路段。</p></div>
+          <div class="slot"><div class="time">10:35—13:30</div><p><b>平山湖标准核心线</b>：高处全景 → 峡谷入口 → 谷底主通道 → 开放台阶/步道返回；不加长距离探险线。<a class="guide-link" href="#spot-pingshan">查看指南</a></p></div>
+          <div class="slot"><div class="time">13:30—13:40</div><p>返回停车场、补水，13:40 准时离开。</p></div>
+          <div class="slot"><div class="time">14:50—15:40</div><p><b>张掖离开前正式午餐</b>，选择张掖西站方向、停车方便的餐厅并提前点菜；可吃炮仗面、搓鱼面或炒面片。</p></div>
+          <div class="slot"><div class="time">15:40—15:55</div><p>途中加满油，前往张掖西站停车场。</p></div>
+          <div class="slot"><div class="time">15:55—16:15</div><p><b>高铁站停车场直接还车</b>；提前上传证件并确认快速验车。</p></div>
+          <div class="slot"><div class="time">16:15—16:30</div><p>步行进站、安检，16:30 进入候车区。</p></div>
+          <div class="slot"><div class="time">16:50</div><p><b>目标：D2737 张掖西 → 敦煌，现行约 21:20 到。</b><em>9 月 27 日尚未开售，最终只认 12306 票面。</em></p></div>
+          <div class="slot"><div class="time">21:20—21:50</div><p>敦煌站打车进城、办理入住；酒店不要正对沙州夜市，避免噪音。</p></div>
+          <div class="slot"><div class="time">22:00—22:50</div><p><b>酒店附近热晚餐</b>：汤面、羊肉粉汤或清淡炒菜；同时确认莫高窟票面时间和证件。</p></div>
+        </div>
+        <div class="grid2"><div class="mini"><h4>这天为什么成立</h4><p>大佛寺在市中心、平山湖在东北、张掖西站在西侧。按“老城—峡谷—西站”单向推进，不回酒店取行李，能保留一顿 50 分钟的热午餐。</p></div><div class="mini"><h4>不能突破的边界</h4><p>13:40 必须离开平山湖，16:30 必须进入候车区。若返城晚于 15:05，午餐仍保留但改吃出餐快的面食，不压缩还车和进站。</p></div></div>
+      </article>
+
+      <article class="day"><div class="day-head"><div class="day-no">D5</div><div><h3>9 月 28 日 周一｜莫高窟＋鸣沙山月牙泉</h3><div class="tags"><span class="tag">核心日</span><span class="tag">禁止洞窟摄影</span><span class="tag">沙漠日落</span></div></div><div class="lodging">住宿<b>敦煌原酒店续住</b></div></div>
+        <div class="callout"><strong>时间基准</strong>以下暂按莫高窟 09:00 常规票编排。官方实行实名分时预约并要求预约时间前 30 分钟到数字展示中心；若票面早于 09:00，不能依赖“现场通常不严”的网上经验，需缩短早餐或当天破例早起。</div>
+        <div class="timeline">
+          <div class="slot"><div class="time">07:30</div><p>起床；身份证和优惠证件原件随身。</p></div>
+          <div class="slot"><div class="time">07:35—07:55</div><p><b>酒店附近早餐</b>，20 分钟。</p></div>
+          <div class="slot"><div class="time">08:00</div><p>打车前往莫高窟数字展示中心。</p></div>
+          <div class="slot"><div class="time">08:20—09:00</div><p>到达、安检，常规票按要求换取纸质“莫高窟购票信息单”，在等候区候场。</p></div>
+          <div class="slot"><div class="time">09:00—09:50</div><p>观看数字电影和球幕电影，建立洞窟历史、艺术与地理背景。</p></div>
+          <div class="slot"><div class="time">09:50—10:15</div><p>乘摆渡车前往窟区。</p></div>
+          <div class="slot"><div class="time">10:15—12:10</div><p><b>跟随讲解参观 8 个实体洞窟</b>，观察时代风格、藻井、经变画、供养人和塑像之间的关系。<a class="guide-link" href="#spot-mogao">查看指南</a></p></div>
+          <div class="slot"><div class="time">12:10—12:40</div><p>按体力参观陈列中心/复制洞窟，补充当日未开放的典型洞窟知识。</p></div>
+          <div class="slot"><div class="time">12:40—13:00</div><p>摆渡车返回数字中心，打车回市区。</p></div>
+          <div class="slot"><div class="time">13:10—14:30</div><p><b>正式午餐 80 分钟</b>，可选驴肉黄面、胡羊焖饼或当地家常菜。</p></div>
+          <div class="slot"><div class="time">14:30—16:00</div><p>酒店午休，给沙漠行程恢复体力。</p></div>
+          <div class="slot"><div class="time">16:00—16:30</div><p>换沙漠装备并前往鸣沙山中门，身份证实名入园。</p></div>
+          <div class="slot"><div class="time">16:40—17:40</div><p>可选骑骆驼约 50—60 分钟；腰背不适或介意动物项目者直接步行去月牙泉。<a class="guide-link" href="#spot-mingsha">查看指南</a></p></div>
+          <div class="slot"><div class="time">17:40—18:30</div><p>月牙泉、鸣月阁周边，先拍泉与楼阁，再准备爬沙脊。</p></div>
+          <div class="slot"><div class="time">18:30—19:40</div><p>沿木梯/沙梯登沙脊，看日落和剪影；日落前 20 分钟停止走动、确定机位。</p></div>
+          <div class="slot"><div class="time">19:40—20:10</div><p>下山离园，日落后立即穿上防风外套。</p></div>
+          <div class="slot"><div class="time">20:30—22:00</div><p><b>正式晚餐 90 分钟</b>；体力尚可再短逛沙州夜市，不延长到深夜。</p></div>
+        </div>
+        <div class="grid2"><div class="mini"><h4>莫高窟红线</h4><p>洞窟内不摄影、不触摸壁面、不使用强光；跟紧本组讲解。大包寄存，手机静音。</p></div><div class="mini"><h4>鸣沙山安全</h4><p>不要独自翻越无人沙脊；大风、雷电、沙尘时听从关闭通知。骆驼起卧时身体后仰并抓牢扶手。</p></div></div>
+      </article>
+
+      <article class="day"><div class="day-head"><div class="day-no">D6</div><div><h3>9 月 29 日 周二｜敦煌西线：玉门关＋汉长城＋雅丹＋观星</h3><div class="tags"><span class="tag">小团/包车</span><span class="tag">戈壁长线</span><span class="tag">雅丹日落</span><span class="tag">月夜星空</span></div></div><div class="lodging">住宿<b>敦煌原酒店续住</b></div></div>
+        <div class="timeline">
+          <div class="slot"><div class="time">07:30</div><p>起床。</p></div>
+          <div class="slot"><div class="time">07:40—08:00</div><p><b>酒店附近早餐</b>，20 分钟；每人准备 1.5—2L 水。</p></div>
+          <div class="slot"><div class="time">08:00—08:20</div><p>取提前预订的晚餐、整理防风衣和摄影装备。</p></div>
+          <div class="slot"><div class="time">08:30</div><p>酒店接车。书面确认“玉门关＋汉长城＋雅丹日落＋安全点短时观星”。</p></div>
+          <div class="slot"><div class="time">10:40—12:20</div><p><b>玉门关</b>：先看陈列馆和汉代关防地图，再看小方盘城夯土结构、门道与戈壁尺度。<a class="guide-link" href="#spot-yumenguan">查看指南</a></p></div>
+          <div class="slot"><div class="time">12:20—13:20</div><p><b>午餐 60 分钟</b>。优先正规服务点热食；若当天不营业，使用从敦煌准备好的完整餐食，不只吃零食。</p></div>
+          <div class="slot"><div class="time">13:20—14:10</div><p><b>汉长城遗址</b>：观察芦苇、红柳与砂砾分层，不越过围栏或触碰遗址。<a class="guide-link" href="#spot-yumenguan">查看指南</a></p></div>
+          <div class="slot"><div class="time">14:10—16:10</div><p>前往敦煌雅丹，车上休息。</p></div>
+          <div class="slot"><div class="time">16:10—19:30</div><p><b>雅丹日落线</b>：金狮迎宾 → 狮身人面 → 孔雀玉立 → 西海舰队；以当天日落班和景交车顺序为准。<a class="guide-link" href="#spot-yadan">查看指南</a></p></div>
+          <div class="slot"><div class="time">19:30—20:10</div><p><b>晚餐 40 分钟</b>，在允许的游客服务区或车上坐稳吃完提前准备的饭菜、水果和热饮。</p></div>
+          <div class="slot"><div class="time">20:10—20:40</div><p><b>短时观星</b>：只在司机确认安全、允许停车的位置进行，关闭车灯后让眼睛适应黑暗。</p></div>
+          <div class="slot"><div class="time">20:40</div><p>返程。月底月光较强，适合看月照雅丹和亮星，银河核心可能较淡。</p></div>
+          <div class="slot"><div class="time">23:10</div><p>预计回酒店，洗漱休息，不再安排夜宵场。</p></div>
+        </div>
+        <div class="callout"><strong>长线底线</strong>雅丹距敦煌市区单程约 158km，玉雅公路沿途补给少。观星必须随正规包车/小团在安全停靠点完成；若当天大风沙尘、景区取消日落班或身体疲劳，接受提前返城，不为日落或银河冒险。</div>
+      </article>
+
+      <article class="day"><div class="day-head"><div class="day-no">D7</div><div><h3>9 月 30 日 周三｜敦煌 → 嘉峪关＋关城</h3><div class="tags"><span class="tag">较晚动车</span><span class="tag">明长城</span><span class="tag">不赶三景区</span></div></div><div class="lodging">住宿<b>嘉峪关市区/大唐美食街附近</b></div></div>
+        <div class="timeline">
+          <div class="slot"><div class="time">07:30</div><p>起床。</p></div>
+          <div class="slot"><div class="time">07:35—07:55</div><p><b>酒店附近早餐</b>，20 分钟。</p></div>
+          <div class="slot"><div class="time">07:55—08:00</div><p>退房，打车前往敦煌站。</p></div>
+          <div class="slot"><div class="time">08:20</div><p>抵达敦煌站，距目标发车约 20 分钟。</p></div>
+          <div class="slot"><div class="time">约 08:40</div><p><b>目标：敦煌 → 嘉峪关南，现行参考约 11:03 到。</b><em>9 月 30 日尚未开售，最终以 12306 票面为准。</em></p></div>
+          <div class="slot"><div class="time">11:03—11:40</div><p>前往酒店，寄存行李或提前入住。</p></div>
+          <div class="slot"><div class="time">11:50—13:10</div><p><b>正式午餐 80 分钟</b>，补足蔬菜和主食。</p></div>
+          <div class="slot"><div class="time">13:10—13:30</div><p>打车前往嘉峪关关城游客中心。</p></div>
+          <div class="slot"><div class="time">13:30—17:00</div><p><b>关城完整线路</b>：长城博物馆/序厅 → 东闸门与碑刻 → 文昌阁 → 光化门 → 内城 → 柔远门 → 登城墙 → 西门望戈壁。<a class="guide-link" href="#spot-jiayuguan">查看指南</a></p></div>
+          <div class="slot"><div class="time">17:00—17:30</div><p>返回酒店。</p></div>
+          <div class="slot"><div class="time">17:30—18:00</div><p>办理入住、休息。</p></div>
+          <div class="slot"><div class="time">18:10—19:40</div><p><b>正式晚餐 90 分钟</b>：烤羊肉、炮仗面/拉条子、糊锅，按食量搭配。</p></div>
+          <div class="slot"><div class="time">19:40—21:00</div><p>自由散步或回酒店休息；默认不加夜游，回房后线上值机。</p></div>
+        </div>
+        <div class="grid2"><div class="mini"><h4>为什么不塞第一墩</h4><p>关城值得 3.5—4 小时。长城第一墩和悬壁长城分处不同方向，即使关城票可能赠联游券，也不等于当天必须用完。</p></div><div class="mini"><h4>关城摄影</h4><p>城门框景、城墙引导线、西门远眺戈壁。人像穿砖红、米白或深蓝，避开与夯土同色的卡其全套。</p></div></div>
+      </article>
+
+      <article class="day"><div class="day-head"><div class="day-no">D8</div><div><h3>10 月 1 日 周四｜嘉峪关 → 昆明</h3><div class="tags"><span class="tag">国庆首日</span><span class="tag">机场缓冲</span></div></div><div class="lodging">返程<b>14:00 起飞</b></div></div>
+        <div class="timeline">
+          <div class="slot"><div class="time">08:00</div><p>自然醒，不安排需要门票的景点。</p></div>
+          <div class="slot"><div class="time">08:20—08:40</div><p><b>酒店附近早餐</b>，20 分钟。</p></div>
+          <div class="slot"><div class="time">08:40—10:00</div><p>整理行李、休息；液体和工具按民航规则托运。</p></div>
+          <div class="slot"><div class="time">10:00—10:30</div><p>退房，网约车前往<b>嘉峪关酒泉机场</b>；国庆首日不依赖卡点公交。</p></div>
+          <div class="slot"><div class="time">11:00—11:30</div><p>预计抵达机场，办理值机、托运和安检。</p></div>
+          <div class="slot"><div class="time">11:30—12:30</div><p><b>安检后午餐 60 分钟</b>，随后充电、补水。</p></div>
+          <div class="slot"><div class="time">13:20</div><p>到登机口。</p></div>
+          <div class="slot"><div class="time">14:00</div><p><b>嘉峪关起飞前往昆明</b>（已确认）。</p></div>
+        </div>
+      </article>
+    </section>
+
+    <section id="spots">
+      <div class="section-kicker">Field guide</div><h2>景点深度指南</h2>
+      <p class="sub">这一部分不只列“必看清单”，还补充了进入景区后的游览逻辑、最值得观察的细节、体力分配和拍摄思路。时间不足时，优先完成每个景点的核心路线，再考虑附加项目。</p>
+      <p class="nav-note">“高德导航”会打开高德地图的地点搜索页，并尽量调起手机 App；该功能需要联网。出发前请在高德中再次核对景区入口名称，尤其是莫高窟数字展示中心和七彩丹霞北入口。</p>
+
+      <article class="spot"><div class="spot-top"><div><div class="section-kicker">Wuwei · Qilian Mountains</div><h3>冰沟河经典路线</h3></div><span class="rating">本日主方案</span></div><p>冰沟河位于祁连山东端，景观并不是单一“冰川”，而是由高山草甸、河谷、峡谷、云杉林和雪山视野组成的连续山地空间。9 月下旬若气候正常，林木与草地会逐渐进入秋色期：低处黄绿相间，高处更早变冷，天气好的时候能在同一天看到森林、裸岩与远处雪线。</p><div class="spot-meta"><div><b>建议时长</b>4—4.5 小时</div><div><b>体力</b>中</div><div><b>核心</b>峡谷＋森林</div><div><b>天气</b>可能临时关闭</div></div><div class="grid2"><div><h4>推荐游览顺序</h4><ol><li>乘景交车进入，先看马兰花草原的开阔尺度。</li><li>在尼美拉峡谷观察河谷、岩壁与植被变化。</li><li>把主要步行时间留给祁连森林和半亩方塘。</li><li>大汗营地、水亭和冰沟老街作为返程休息点。</li></ol></div><div><h4>怎么取舍</h4><ul><li>12:10 才开始游览，不追求走遍所有支路。</li><li>优先自然景观，演艺、商业体验和长时间拍照靠后。</li><li>16:20 开始返回，确保 16:40 发车去张掖。</li><li>抵达晚于 12:00 时，缩短营地和老街停留。</li></ul></div></div><div class="guide-extra"><div><b>看景方法</b><p>进入景区后留意海拔升高带来的植被变化：草甸逐渐让位于针叶林，沟谷湿润处颜色更深，背阴坡更冷。不要只找一个“终点打卡”，沿途环境的渐变才是冰沟河最有价值的部分。</p></div><div><b>穿着装备</b><p>速干长袖、抓绒或薄羽绒、防风防水外层、防滑徒步鞋。山区风雨来得快，帽子、一次性雨衣和干燥袜子放随身包；不要只按武威或机场气温穿衣。</p></div><div><b>摄影与天气</b><p>广角适合草原、峡谷和森林纵深，中长焦适合截取雪山、林带和人物。阴天降低天空占比拍植被层次；雨雪、大风或道路管制时服从关闭通知，不在景区外围自行穿越。</p></div></div><div class="callout ok"><strong>本行程的舒服走法</strong>先吃完 50 分钟午餐再进景区，步行时保持能正常聊天的速度。前一晚刚落地，不用把经典线走成竞速赛；留体力给第二天的马蹄寺和丹霞更划算。</div></article>
+
+      <article class="spot"><div class="spot-top"><div><div class="section-kicker">Binggouhe · Challenge</div><h3>柴尔龙海／天池挑战路线</h3></div><span class="rating">高强度备选</span></div><p>柴尔龙海位于高海拔山地，湖面海拔约 4008 米。官方说明从核心接驳区域继续徒步，单程约 10 公里、往返约 20 公里，通常需要 6—8 小时。它的吸引力是高山湖泊、雪峰和一路上升的荒野感，但对刚从广州抵达、尚未适应海拔的人来说，风险远高于经典路线。</p><div class="spot-meta"><div><b>里程</b>往返约 20km</div><div><b>体力</b>高</div><div><b>海拔</b>湖面约 4008m</div><div><b>要求</b>10:00 前抵达</div></div><div class="grid2"><div><h4>路线节奏</h4><ul><li>约 3km：丰会服务点，第一次判断身体状态。</li><li>约 6km：石羊服务点，补水并再次评估。</li><li>约 9km：柴海服务点，距湖约 1km。</li><li>约 10km：柴尔龙海，到湖后不能因拍照拖延返程。</li></ul></div><div><h4>立即下撤信号</h4><ul><li>头痛持续加重、恶心或明显眩晕。</li><li>步态不稳、反应迟缓、异常乏力。</li><li>胸闷、静止时仍明显喘不过气。</li><li>天气转坏、能见度下降或官方要求撤离。</li></ul></div></div><div class="guide-extra"><div><b>时间底线</b><p>本行程若选天池，需 05:40 起床、06:10 离开机场酒店，约 09:30 入园；13:30 左右到湖，14:00 无论是否拍够都要下撤。不能用“走快一点”解决高海拔和长距离问题。</p></div><div><b>食水与装备</b><p>每人至少 1.5—2L 水、电解质饮料、午餐、能量食物、保暖层、雨衣、头灯和充电宝。登山杖能减轻下坡负担；新鞋、牛仔裤和单层城市运动鞋都不合适。</p></div><div><b>安全原则</b><p>结伴、不夜爬、不脱离开放路线。便携氧气只能缓解一部分不适，不能作为继续上升的理由。没有规律徒步经历、近期感冒或有心肺疾病者应选择经典线。</p></div></div></article>
+
+      <article class="spot"><div class="spot-top"><div><div class="section-kicker">Zhangye · Sunan</div><h3>马蹄石窟群</h3></div><span class="rating">人文＋自然核心</span></div><p>马蹄寺始凿于十六国北凉时期，70 余处窟龛散布在祁连山北麓的红色崖壁中。它与莫高窟并不重复：莫高窟以壁画、彩塑和完整讲解体系见长，马蹄寺最难替代的体验则是进入崖壁内部，在狭窄、陡峭且上下连通的石道中攀登，亲身感受洞窟如何与山体结合。</p><div class="spot-meta"><div><b>本日时长</b>约 2 小时</div><div><b>体力</b>中高</div><div><b>核心</b>三十三天石窟</div><div><b>环境</b>阴影处湿冷</div></div><div class="grid2"><div><h4>两小时优先顺序</h4><ol><li>在北寺外侧看整面崖壁和洞窟分布。</li><li>进入三十三天石窟，体验层层相连的洞道。</li><li>看藏佛殿、马蹄殿及宗教空间。</li><li>余时才给千佛洞或较远外围区域。</li></ol></div><div><h4>进入洞道前</h4><ul><li>大包留车上，小包前背，双手保持空闲。</li><li>摘下容易掉落的帽子和长挂饰，不用自拍杆。</li><li>怕黑、幽闭、恐高或膝伤者可只看外部崖壁。</li><li>上下行保持间距，不催促前方游客。</li></ul></div></div><div class="guide-extra"><div><b>观察重点</b><p>先从外部理解崖壁开凿位置，再进入洞内比较门洞、阶梯和礼佛空间的尺度。留意崖壁颜色、窟龛层级和山谷视线，理解这里既是宗教场所，也是适应自然地形的建筑工程。</p></div><div><b>体力分配</b><p>三十三天是当天最费体力的部分，进洞前活动脚踝和膝盖。上行不追赶，下行扶稳、重心放低；完成核心段后即使还有体力，也不要为了外围点挤掉午餐、骑马和丹霞。</p></div><div><b>穿着与拍摄</b><p>防滑徒步鞋、长裤、薄抓绒和防风层。洞内和宗教空间是否允许拍摄只看现场标识；外部拍摄可用广角纳入整片红崖，用洞口和人物表现尺度。</p></div></div><div class="callout"><strong>宗教与文保礼仪</strong>不触摸造像或壁面，不跨越围挡，不高声喧哗。遇礼佛人群主动让行；如果现场排队较长，宁可减少外围景点，也不要在狭窄通道抢行。</div></article>
+
+      <article class="spot"><div class="spot-top"><div><div class="section-kicker">Qilian Foothills</div><h3>骑马＋大都麻村秋景</h3></div><span class="rating">沿途体验</span></div><p>这一段的价值不是“再打两个卡”，而是从马蹄寺的红崖转入祁连山北麓的草甸、村落、林带和雪峰背景。大都麻村一带是肃南乡村旅游区域，9 月下旬可能出现黄绿相间的秋景；实际颜色受当年降温、降水和海拔影响，不能承诺整片金黄。</p><div class="spot-meta"><div><b>骑马</b>约 40 分钟</div><div><b>秋景</b>约 50 分钟</div><div><b>驾驶</b>弯多路窄</div><div><b>雨雪</b>取消绕行</div></div><div class="grid2"><div><h4>骑马怎么选</h4><ul><li>只选固定场地或成熟路线的正规经营点。</li><li>先问总价、时长、是否一人一马、是否含头盔。</li><li>第一次骑马要求马夫牵引或全程跟随。</li><li>不追求跑马、并排自拍或离队单骑。</li></ul></div><div><h4>秋景怎么走</h4><ul><li>沿导航可识别、允许社会车辆通行的道路前进。</li><li>在有停车空间的位置看草甸、林带和雪峰。</li><li>不把车驶入草场、河滩或不明碎石便道。</li><li>14:20 必须转向七彩丹霞，不继续深入。</li></ul></div></div><div class="guide-extra"><div><b>骑马姿势</b><p>上马后脚掌前部踩镫、膝盖自然贴近马身，手扶鞍桥但不要死拽缰绳。马起步和上下坡时听马夫指令；下马前等马完全停稳，手机和相机使用挂绳。</p></div><div><b>自驾判断</b><p>Y334 等山区道路可能出现急弯、窄路、落石或临时管理。遇雨雪、浓雾、结冰或导航引向无铺装路时原路返回；在检查点如实说明目的地并按要求登记。</p></div><div><b>摄影建议</b><p>中长焦能把村落、林带和雪峰压缩到同一画面；人物穿红、白或深蓝更醒目。拍马时使用连拍并保留安全距离，不站在马匹正后方，也不为取景横穿道路。</p></div></div></article>
+
+      <article class="spot"><div class="spot-top"><div><div class="section-kicker">Zhangye</div><h3>七彩丹霞</h3></div><span class="rating">自然必去</span></div><p>七彩丹霞由不同矿物成分的沉积层在构造抬升、流水切割和风化作用下形成，兼具陡崖式丹霞与柔缓彩色丘陵。它的震撼来自成片色带顺着山势起伏，而不是寻找某一座“最像动物”的山；云量、雨水和太阳角度会让同一片山在几分钟内明显变色。</p><div class="spot-meta"><div><b>本日时长</b>约 2.5 小时</div><div><b>体力</b>低—中</div><div><b>交通</b>景交车循环</div><div><b>最佳</b>日落前斜光</div></div><div class="grid2"><div><h4>推荐观景台</h4><ul><li><b>七彩云海台：</b>尺度开阔，先建立整个景区的空间感。</li><li><b>七彩锦绣台：</b>色带密、纹理细，适合长焦截取。</li><li><b>七彩虹霞台：</b>层次集中，通常最适合傍晚停留。</li><li>具体名称和开放顺序以入园当天导览图为准。</li></ul></div><div><h4>项目取舍</h4><ul><li>普通景交线已覆盖核心，本日不参加深度游。</li><li>热气球、直升机等项目受风力影响，也会占用斜光时间。</li><li>遇阴天就看线条和空间，不追求宣传图式高饱和度。</li><li>雷雨、大风时远离高处护栏并听从疏散。</li></ul></div></div><div class="guide-extra"><div><b>景交逻辑</b><p>不同入口对应的景交顺序可能不同，入园先拍导览图并确认最终回到哪个出口。每次下车记住车行方向和末班时间，不能为了返回某个观景台逆着循环线乘车。</p></div><div><b>怎样看地层</b><p>先用肉眼找连续色带，再观察断裂、褶皱和沟谷怎样切开沉积层。晴天看明暗塑造山体，雨后颜色更浓，薄云天则适合拍柔和层次；颜色是光线与地质共同作用的结果。</p></div><div><b>摄影策略</b><p>广角交代整体规模，70—200mm 等中长焦更容易压缩层理。手机可轻微降低曝光，避免亮色地层过曝；人物不要翻越栈道，服装选白、蓝或红，避开整套卡其。</p></div></div><div class="callout"><strong>本日只有 2.5 小时</strong>先完成云海台和锦绣台，再把最后 45—60 分钟留给虹霞台。景区若公布的秋季停止入园时间早于计划，立即缩短大都麻村停留，不拿丹霞闭园时间冒险。</div></article>
+
+      <article class="spot"><div class="spot-top"><div><div class="section-kicker">Zhangye</div><h3>平山湖大峡谷</h3></div><span class="rating">峡谷徒步</span></div><p>平山湖距张掖市区约 56 公里，红色砂砾岩被流水和风力切割成沟壑、陡壁、台地与狭窄谷道。它与七彩丹霞的观看方式完全不同：丹霞多从观景台远看色带，平山湖则要从高处下降到谷底，让岩壁逐渐包围视野，再通过台阶或开放步道返回。</p><div class="spot-meta"><div><b>本日时长</b>约 3 小时</div><div><b>体力</b>中高</div><div><b>核心</b>俯瞰＋谷底</div><div><b>硬节点</b>13:40 离开</div></div><div class="grid2"><div><h4>标准线看法</h4><ol><li>高处观景台先看峡谷切割和远处台地。</li><li>沿开放步道下降，控制速度、保护膝盖。</li><li>在谷底主通道看岩层、转弯和空间压迫感。</li><li>按照当天开放的台阶/步道返回，不进新支线。</li></ol></div><div><h4>不参加什么</h4><ul><li>不选时间不可控的长距离探险线。</li><li>不增加越野车、骑骆驼等附加项目。</li><li>不为拍无人画面脱离护栏或正式步道。</li><li>12:50 后不再进入任何新的岔路。</li></ul></div></div><div class="guide-extra"><div><b>体力难点</b><p>下降阶段容易走得过快，真正耗力的是后半段连续回升。穿有纹路的徒步鞋和速干长裤，膝盖敏感者带护膝或登山杖；小步下坡，最后一小时主动补水。</p></div><div><b>光线与摄影</b><p>正午谷底反差大，拍照时优先保护天空和亮部；广角适合仰拍岩壁，中长焦适合在高处压缩层叠山脊。人物穿白、蓝或红色，能从红褐色背景中分离。</p></div><div><b>天气处理</b><p>峡谷遮阴少，晴天防晒；大风注意砂砾；降雨时谷底存在积水和落石风险。任何封闭或改线都以现场工作人员为准，不根据旧攻略自行寻找出口。</p></div></div><div class="callout"><strong>赶车策略</strong>13:40 必须离开停车场。返城晚于 15:05 时，仍保留吃饭时间，但改为提前点好的面食；无论如何不压缩 15:55 还车和 16:30 进站。</div></article>
+
+      <article class="spot"><div class="spot-top"><div><div class="section-kicker">Zhangye</div><h3>张掖大佛寺</h3></div><span class="rating">西夏核心</span></div><p>大佛寺是理解张掖作为河西重镇的重要入口。寺内核心大佛殿保存体量巨大的木胎泥塑卧佛，殿堂、造像、壁画和礼拜空间共同构成完整体验。这里的重点不是“看一尊很大的佛”，而是观察巨型造像如何被木构建筑包容，以及西夏以来不同历史时期如何在同一场所留下痕迹。</p><div class="spot-meta"><div><b>本日时长</b>60 分钟</div><div><b>体力</b>低</div><div><b>核心</b>大佛殿＋卧佛</div><div><b>氛围</b>安静观看</div></div><div class="grid2"><div><h4>一小时路线</h4><ol><li>快速通过前区，先进入大佛殿。</li><li>中轴线远看卧佛和殿堂比例。</li><li>沿允许路线看面部、手势、衣纹和弟子像。</li><li>抬头看梁架、斗拱和壁画。</li><li>余时再看弥陀千佛塔或山西会馆。</li></ol></div><div><h4>观看礼仪</h4><ul><li>室内是否可拍严格按现场标识，不用闪光。</li><li>衣着得体、轻声，不触摸造像和建筑构件。</li><li>不要长时间占据中轴线影响他人礼佛。</li><li>官方页面虽标示较早开放，出发前仍需复核。</li></ul></div></div><div class="guide-extra"><div><b>卧佛怎么看</b><p>先不要走近，站远处看身体长度与殿内尺度，再逐渐靠近观察安静的面部表情、手部姿态和衣褶走向。造像带来的庄严感来自整体空间，不只是尺寸数字。</p></div><div><b>建筑怎么看</b><p>观察柱网、梁架和屋顶如何创造无柱遮挡或较少遮挡的礼拜空间，再看殿内壁画与造像的相互位置。大佛殿本身与卧佛同样值得停留。</p></div><div><b>本日取舍</b><p>08:10—09:10 只有一小时，至少把 40 分钟留给大佛殿。外围展览看不完很正常；09:10 必须出发去平山湖，不能以“再看五分钟”侵蚀高速和景区时间。</p></div></div></article>
+
+      <article class="spot"><div class="spot-top"><div><div class="section-kicker">Dunhuang</div><h3>莫高窟</h3></div><span class="rating">全程第一核心</span></div><p>莫高窟自公元 4 世纪起持续营建，洞窟跨越多个朝代，是宗教艺术、丝路交流和中古社会生活的立体档案。壁画中除了飞天和佛教故事，还有乐舞、商旅、建筑、农耕、服饰、交通工具与供养人画像；彩塑、壁画、藻井、佛坛和洞窟空间必须放在一起看，才会理解它为何不是普通“壁画展”。</p><div class="spot-meta"><div><b>本日时长</b>约 4 小时</div><div><b>模式</b>实名分时预约</div><div><b>常规票</b>电影＋8 窟</div><div><b>红线</b>洞内禁止摄影</div></div><div class="grid2"><div><h4>四条观察线</h4><ul><li><b>年代：</b>早期、隋唐、五代宋、西夏元的风格变化。</li><li><b>空间：</b>中心塔柱、佛坛、塑像与壁画如何组合。</li><li><b>生活：</b>经变画中的城市、乐器、服饰、农耕与商旅。</li><li><b>交流：</b>中原、印度、中亚艺术元素如何在敦煌交汇。</li></ul></div><div><h4>参观技巧</h4><ul><li>认真看两场电影，它们提供地理和历史坐标。</li><li>每入一窟先看整体，眼睛适应黑暗后再找细节。</li><li>不强记所有窟号，只记录 2—3 个最触动的细节。</li><li>常规窟随机组合，不能执着于网上特定“必看窟”。</li><li>特窟是否开放、能否购票完全以当日现场为准。</li></ul></div></div><div class="guide-extra"><div><b>完整流程</b><p>先在数字展示中心核验证件、观看主题电影与球幕电影，再乘官方摆渡车去窟区，跟随本组讲解员进入当日开放洞窟。常规洞窟结束后不要急着离开，可按体力看陈列中心、复制洞窟和窟前环境。</p></div><div><b>听讲框架</b><p>每窟抓住四个问题：谁出资开窟、描绘了什么题材、塑像如何与壁画配合、后世是否重修或改绘。这样即使离开后记不住编号，也能记住历史关系和视觉体验。</p></div><div><b>文保与穿着</b><p>洞内不摄影、不触摸、不倚靠、不使用强光；跟紧本组，避免与其他讲解组混行。早场温度偏低，穿长裤、薄外套和安静软底鞋；大包寄存，只带证件、水和必要药物。</p></div></div><div class="callout"><strong>票面时间必须尊重</strong>官方明确实行实名分时预约，并要求提前 30 分钟抵达数字展示中心。网上出现的晚到放行属于现场个案，不能据此安排跨城交通或睡懒觉。</div></article>
+
+      <article class="spot"><div class="spot-top"><div><div class="section-kicker">Dunhuang</div><h3>鸣沙山月牙泉</h3></div><span class="rating">沙漠日落核心</span></div><p>连绵沙山环抱月牙形泉水，沙丘、绿洲、楼阁和城市边缘在同一视野中相遇。近看月牙泉能感受沙水共存，登上沙脊后视野突然打开，才能看到沙丘曲线、泉水绿洲与远处城市之间的层次；因此不要把全部时间耗在入口活动。</p><div class="spot-meta"><div><b>本日时长</b>约 3.5 小时</div><div><b>体力</b>中高</div><div><b>预约</b>线上实名</div><div><b>最佳</b>日落前 2 小时</div></div><div class="grid2"><div><h4>推荐动线</h4><ol><li>入园后先完成骑骆驼或直接步行。</li><li>到月牙泉和鸣月阁看近景、拍经典角度。</li><li>日落前 60—90 分钟开始登主沙脊。</li><li>选好机位看落日，日落后停留片刻看蓝调。</li></ol></div><div><h4>活动取舍</h4><ul><li>骑骆驼约 50—60 分钟，是体验而非必选。</li><li>滑沙、越野车等最多再选一项，不全部叠加。</li><li>排队超过 40 分钟时，优先保月牙泉和日落。</li><li>腰背、膝盖不适者不勉强骑乘或登最高处。</li></ul></div></div><div class="guide-extra"><div><b>爬沙方法</b><p>沿木梯、沙梯或踩实路线比直冲松沙省力，步幅小、节奏稳，每走一段回头看一次。下坡不奔跑、不横切陡坡；不必爬到最高点，中段已经能获得沙泉同框视野。</p></div><div><b>防沙穿搭</b><p>运动鞋加鞋套能减少进沙，但无法完全密封；长裙只用于平地拍摄，爬坡前提起或换长裤。口罩、魔术头巾、包裹式墨镜和防风外套随身，相机尽量不在室外换镜头。</p></div><div><b>拍摄思路</b><p>下午先拍月牙泉倒影和楼阁，傍晚转向沙脊曲线、人物剪影与驼队。逆光对天空测光，人物用连拍；日落后亮度下降很快，先穿外套再整理器材。</p></div></div><div class="callout"><strong>安全边界</strong>不独自翻越无人沙脊，不在风沙、雷电或关闭通知下继续攀爬。骆驼起卧时身体微后仰、抓牢扶手，任何时候不从驼队之间穿行。</div></article>
+
+      <article class="spot"><div class="spot-top"><div><div class="section-kicker">Dunhuang West Line</div><h3>玉门关＋汉长城</h3></div><span class="rating">读懂边塞体系</span></div><p>玉门关不是后来想象中的高大城楼，而是汉代道路、关隘、烽燧、粮仓与长城共同组成的边防交通系统。小方盘城、河仓城及周边遗迹说明朝廷如何依赖水源和驿路控制人员与物资流动；景观看起来朴素，必须把残存夯土放回戈壁地理和丝路网络中理解。</p><div class="spot-meta"><div><b>本日时长</b>约 2.5 小时</div><div><b>体力</b>低</div><div><b>核心</b>地图＋遗址</div><div><b>风格</b>荒野历史</div></div><div class="grid2"><div><h4>推荐顺序</h4><ol><li>先看陈列馆的汉代交通和关防地图。</li><li>到小方盘城观察门道、夯土和方位。</li><li>看城址与水源、道路、荒野的距离。</li><li>前往汉长城观察分层材料与烽燧系统。</li></ol></div><div><h4>不要只看“土墩”</h4><ul><li>想象人员、粮草和军情怎样沿节点移动。</li><li>比较关城、长城和烽燧承担的不同功能。</li><li>留意红柳、芦苇、砂砾的就地取材。</li><li>所有遗址只在围栏外观察，不触摸或攀爬。</li></ul></div></div><div class="guide-extra"><div><b>先定位再观看</b><p>在地图上找出敦煌、疏勒河、玉门关、仓储遗址和长城的关系，再走到小方盘城。理解水源、道路和视线后，一座孤立的方城才会变成控制河西西端通道的关键节点。</p></div><div><b>汉长城细节</b><p>这里缺少大量砖石，古人把芦苇、红柳枝和砂砾分层夯筑。观察截面时注意材料与厚度变化，但绝不越过围栏；两千年后的墙体表层经不起触摸和踩踏。</p></div><div><b>风沙与摄影</b><p>广角拍遗址在荒野中的孤独尺度，中长焦压缩烽燧与地平线。人物只站开放步道作为比例参照；风大时先保护眼睛和设备，不频繁更换镜头。</p></div></div><div class="callout ok"><strong>体验项目</strong>通关文牒、汉简书写或仿古交通属于辅助体验，最多选一项。先把陈列和遗址看懂，再决定是否参加，不能挤占前往雅丹的时间。</div></article>
+
+      <article class="spot"><div class="spot-top"><div><div class="section-kicker">Dunhuang West Line</div><h3>敦煌雅丹＋月夜观星</h3></div><span class="rating">荒野与天象</span></div><p>长期定向风蚀把沉积层切割成垄岗和沟槽，形成像舰队、城堡或动物的轮廓。雅丹的精华并非逐个寻找拟物名称，而是观察成片风蚀地貌在低角度阳光下出现明暗节奏，以及巨大荒野如何让车辆和人物显得极小。</p><div class="spot-meta"><div><b>本日时长</b>约 3.5 小时</div><div><b>体力</b>低—中</div><div><b>核心</b>西海舰队</div><div><b>夜空</b>月光较强</div></div><div class="grid2"><div><h4>观景重点</h4><ul><li><b>西海舰队：</b>看成片垄岗排列和地貌尺度。</li><li><b>孔雀玉立：</b>辨认轮廓，也观察其受风蚀的一面。</li><li><b>无遮挡区域：</b>看夕阳把沟槽拉成长阴影。</li><li>先听清返程集合点，再离开景交车。</li></ul></div><div><h4>观星预期</h4><ul><li>9 月底银河仍在，但月光会降低肉眼对比度。</li><li>重点看亮星、星座和月光照亮的雅丹轮廓。</li><li>只在司机确认的合法安全停靠点短时停留。</li><li>不为寻找更黑环境独自深入戈壁。</li></ul></div></div><div class="guide-extra"><div><b>地貌怎么看</b><p>观察垄岗长轴是否朝向相近方向、迎风面和背风面如何不同、沟槽深浅怎样变化。太阳降低后，侧光会把风蚀结构变成立体明暗，这比单纯寻找“像什么”更耐看。</p></div><div><b>日落班节奏</b><p>入园后记录景交车号、集合点和最晚登车时间。先完成常规点位，最后把主要摄影时间留给成片地貌；日落后气温下降快，防风衣和手套要带下车。</p></div><div><b>夜空拍摄</b><p>手机使用稳定支撑和夜景模式，相机可用广角大光圈、三脚架和延时快门；月光强时适当降低曝光，尝试拍清雅丹前景与星点，而不是强行追求浓密银河。</p></div></div><div class="callout"><strong>荒野红线</strong>大风会卷起砂砾，包裹式眼镜优于隐形眼镜；不离开景交车线路、不攀爬雅丹体、不远离车辆。景区取消日落班或司机判断夜间道路不安全时，无条件提前返城。</div></article>
+
+      <article class="spot"><div class="spot-top"><div><div class="section-kicker">Jiayuguan</div><h3>嘉峪关关城</h3></div><span class="rating">明长城收束篇</span></div><p>嘉峪关是明长城西端最重要的关隘之一，依托狭窄走廊、戈壁和远山形成天然地理屏障。它的价值不只是雄伟城楼，而是闸门、瓮城、内城、门道、城墙和外围长城共同构成的层层防御；从城内登上城墙、再望向西侧戈壁，才能理解“关”为什么建在这里。</p><div class="spot-meta"><div><b>本日时长</b>约 3.5 小时</div><div><b>体力</b>中</div><div><b>核心</b>防御层次＋登城</div><div><b>天气</b>城墙风大</div></div><div class="grid2"><div><h4>推荐路线</h4><ol><li>长城博物馆/序厅，先理解河西走廊地理。</li><li>东闸门、碑刻与文昌阁。</li><li>光化门进入内城，观察门道和瓮城。</li><li>穿过内城至柔远门，比较东西方向。</li><li>登城墙，从西门看戈壁、长城与远山。</li></ol></div><div><h4>本次明确取舍</h4><ul><li>只保证关城，不赶第一墩和悬壁长城。</li><li>联票或赠券不等于必须当天全部使用。</li><li>夜游是演艺体验，不替代白天阅读建筑。</li><li>17:00 按计划离开，给晚餐和休息留时间。</li></ul></div></div><div class="guide-extra"><div><b>读懂防御</b><p>从东向西观察闸门、瓮城、内城和城楼，想象商旅或军队如何被迫转向、减速并接受逐层检查。门道转折、墙体高度、城门对应关系和城上射界共同构成防御。</p></div><div><b>登城墙看什么</b><p>先向内看院落轴线和城楼层次，再向外寻找戈壁、长城线和祁连山方向。西门视野最能体现关隘扼守交通通道的意义；能见度好时，远山是最重要的天然背景。</p></div><div><b>摄影与穿着</b><p>下午侧光适合拍夯土肌理、门洞框景和城墙引导线。人物穿砖红、米白或深蓝，避开全套卡其；城墙风力通常比地面明显，帽子加固定绳，防风外套随身。</p></div></div><div class="callout ok"><strong>时间分配</strong>博物馆约 35—40 分钟，地面建筑约 90 分钟，城墙和西门至少 60 分钟，其余用于步行与停留。先理解空间再拍照，不需要为了多去两个外围景点压缩关城。</div></article>
+    </section>
+
+    <section id="food">
+      <div class="section-kicker">Eat & sleep</div><h2>餐饮、住宿与城市衔接</h2>
+      <div class="table-wrap"><table><thead><tr><th>城市</th><th>住哪里</th><th>推荐吃</th><th>实用提醒</th></tr></thead><tbody>
+        <tr><td><b>中川机场</b></td><td>航站楼 15 分钟内、提供免费接送机的酒店；不进兰州市区。</td><td>D1 在广州机场提前吃晚餐；D2 早餐就近解决。</td><td>酒店只承担睡眠和转场功能，确认 23:00 后仍可接机、08:15 包车可到门口接人。</td></tr>
+        <tr><td><b>张掖</b></td><td>大佛寺/钟鼓楼附近；方便 D3 晚饭和夜市，D4 去大佛寺也省时。</td><td>卷子鸡、炒拨拉、搓鱼面、臊面、牛肉小饭、炮仗面、烤羊肉。</td><td>D2、D3 晚餐分别留 80/90 分钟；D3 午餐 60 分钟；D4 迟午餐 50 分钟。卷子鸡提前预订小份，面食不要重复点太多。</td></tr>
+        <tr><td><b>敦煌</b></td><td>市中心或党河附近，步行可达夜市但不要正对夜市。</td><td>驴肉黄面、胡羊焖饼、杏皮水、烤羊肉、浆水面。</td><td>杏皮水含糖高；西线日自备水和食物。夜市适合逛，不必每顿都在那里吃。</td></tr>
+        <tr><td><b>嘉峪关</b></td><td>市中心/大唐美食街一带；去关城和机场都方便。</td><td>烤羊肉、炮仗面、拉条子、糊锅、杏皮水。</td><td>返程早午餐别吃太油；10/1 节日客流下优先网约车去机场。</td></tr>
+      </tbody></table></div>
+      <div class="callout ok"><strong>吃饭原则</strong>早餐统一留 20 分钟就近吃；正常午晚餐留 50—90 分钟。D6 西线因补给有限，提前从敦煌带一份完整晚餐，但仍留 40 分钟坐稳吃。每天至少一顿有蔬菜，羊肉和甜饮不要同一餐过量。</div>
+    </section>
+
+    <section id="tickets">
+      <div class="section-kicker">Booking board</div><h2>票务与交通作战表</h2>
+      <div class="table-wrap"><table><thead><tr><th>日期</th><th>事项</th><th>当前状态</th><th>动作</th></tr></thead><tbody>
+        <tr><td>9/24</td><td>广州 19:00 → 兰州</td><td><b>已确定</b></td><td>补录航班号和落地时刻；预订中川机场 15 分钟内、支持深夜接机的酒店。</td></tr>
+        <tr><td>9/25</td><td>中川机场酒店 → 冰沟河 → 张掖</td><td>待订</td><td>预订正规跨城包车，书面写明全程、行李、过路停车和司机休息安排；主方案为经典线。</td></tr>
+        <tr><td>9/25</td><td>冰沟河</td><td>待预约</td><td>通过官方渠道购买；出发前核实天气和道路公告。选择天池线须预约并在 10:00 前抵达。</td></tr>
+        <tr><td>9/26—27</td><td>张掖租车自驾</td><td>待订</td><td>D2 晚送车到酒店，D4 在张掖西站停车场还车；确认异点/服务费、保险、油量和快速验车。</td></tr>
+        <tr><td>9/26</td><td>马蹄寺＋骑马</td><td>待购</td><td>马蹄寺官方渠道购票；骑马现场选正规经营点，确认头盔、时长、总价和马夫陪同。</td></tr>
+        <tr><td>9/26</td><td>七彩丹霞</td><td>待购</td><td>实名购票；9 月闭园时间尚待景区公告，出发前 3 天再核。</td></tr>
+        <tr><td>9/27</td><td>大佛寺＋平山湖</td><td>待购</td><td>退房后行李放租车；13:40 离开平山湖，15:55 到张掖西站停车场还车。</td></tr>
+        <tr><td>9/27</td><td>平山湖大峡谷</td><td>待购</td><td>购买标准游览线路；不加长距离探险项目，出发前复核开放时间和天气公告。</td></tr>
+        <tr><td>9/27</td><td>张掖西 → 敦煌</td><td>未开售</td><td>预计 9/13 进入预售；目标 D2737 约 16:50—21:20，16:30 到站。</td></tr>
+        <tr><td>9/28</td><td>莫高窟早场</td><td><b>已买</b></td><td>确认是常规票还是应急票、票面时间、同行人证件；提前 30 分钟到。</td></tr>
+        <tr><td>9/28</td><td>鸣沙山月牙泉</td><td>待预约</td><td>全面线上售票，官方公众号/“游敦煌”等渠道实名购票；关注秋季时间。</td></tr>
+        <tr><td>9/29</td><td>敦煌西线日落＋观星团</td><td>待订</td><td>书面确认“玉门关＋汉长城＋雅丹日落＋安全停靠点观星 20—30 分钟”，问清回城时间。</td></tr>
+        <tr><td>9/30</td><td>敦煌 → 嘉峪关南</td><td>未开售</td><td>预计 9/16 进入预售；优先约 08:40—11:03 的较晚动车，约 08:20 到站。最终以 12306 为准。</td></tr>
+        <tr><td>10/1</td><td>嘉峪关 14:00 → 昆明</td><td><b>已确定</b></td><td>补录航班号；前一晚值机，10:30 从酒店出发。</td></tr>
+      </tbody></table></div>
+      <h3>交通衔接原则</h3><div class="grid2"><div class="mini"><h4>铁路</h4><p>全部通过铁路 12306 官方渠道购买。张掖—敦煌、敦煌—嘉峪关按你们要求以<b>发车前 20 分钟到站</b>编排；到站后直接安检，不安排取票或购物。</p></div><div class="mini"><h4>包车/小团</h4><p>D2 使用正规跨城包车，D6 西线书面确认雅丹日落和安全点短时观星。核实营运资质、保险、车牌、司机电话及过路停车费用。</p></div><div class="mini"><h4>自驾</h4><p>带驾驶证，取车拍摄全车视频并核对油量、轮胎和保险。D3 山区不赶路；D4 行李随车，张掖西站停车场直接还车。</p></div><div class="mini"><h4>延误优先级</h4><p>保莫高窟票面时间 ＞ 保动车/航班 ＞ 保安全与正餐 ＞ 核心景点 ＞ 骑马、村道绕行、夜市等附加项目。绝不靠超速追回时间。</p></div></div>
+    </section>
+
+    <section id="packing">
+      <div class="section-kicker">Pack smart</div><h2>天气、着装与行李清单</h2>
+      <p class="sub">9 月底河西走廊昼夜温差大、紫外线强、风干燥；冰沟河和祁连山脚下的温度、风雨与市区可能明显不同。以下为气候型参考，不是天气预报：张掖/嘉峪关早晚可能接近 5—10℃，敦煌白天可偏暖，日落后迅速变凉。出发前 72 小时逐点查看机场、冰沟河、肃南、丹霞、平山湖、敦煌和嘉峪关天气。</p>
+      <div class="grid2"><div class="mini"><h4>推荐分层</h4><ul><li>贴身：2—3 件速干短袖/长袖</li><li>中层：抓绒或薄针织 1 件</li><li>外层：轻量防风外套 1 件</li><li>保暖：怕冷者带轻薄羽绒</li><li>下装：长裤 2 条；沙漠拍照服另带</li></ul></div><div class="mini"><h4>鞋</h4><ul><li>主鞋：有纹路、防滑的运动/徒步鞋</li><li>备用：轻便休闲鞋</li><li>沙漠鞋套可买可不买，不能替代抓地鞋</li><li>不建议新鞋、厚底鞋、高跟鞋</li></ul></div></div>
+      <h3>打包清单</h3>
+      <ul class="checklist"><li>身份证、驾驶证、优惠证件、少量现金</li><li>航班/火车/门票截图（离线可看）</li><li>租车订单、保险和还车点截图</li><li>20,000mAh 以内合规充电宝与线</li><li>墨镜、宽檐帽/鸭舌帽（带固定）</li><li>SPF50+ 防晒霜、润唇膏、护手霜</li><li>魔术头巾/口罩，防风沙</li><li>1—1.5L 可重复水瓶；天池线需更多</li><li>电解质冲剂、坚果、能量棒</li><li>折叠小包，莫高窟和马蹄寺减负</li><li>登山杖、护膝（天池/平山湖可用）</li><li>小头灯（仅应急，不用于夜爬）</li><li>纸巾、湿巾、免洗手液</li><li>个人处方药、肠胃药、止痛药、创可贴</li><li>相机防尘袋/密封袋、镜头布</li><li>小三脚架/手机夹（雅丹月夜可用）</li><li>耳塞和眼罩，动车与夜间酒店用</li><li>一次性雨衣；不建议在大风中打伞</li><li>保温杯（早晚和长途车上实用）</li><li>备用袜子和轻薄手套</li></ul>
+      <div class="callout"><strong>健康提醒</strong>经典线和马蹄寺以正常慢走为主；天池线则达到约 4008m、往返约 20km，属于高强度高海拔徒步。头痛加重、恶心、眩晕、步态不稳、胸闷或异常气促时立即下撤；氧气不能作为继续上升的理由。膝伤、心肺疾病、近期感冒或缺少徒步训练者不选天池。</div>
+      <h3>摄影速查</h3><div class="table-wrap"><table><thead><tr><th>场景</th><th>时间</th><th>镜头/手机</th><th>小技巧</th></tr></thead><tbody><tr><td>冰沟河</td><td>中午至下午</td><td>广角＋中长焦</td><td>广角拍峡谷森林，中长焦取雪峰与林带；阴天减少天空比例。</td></tr><tr><td>马蹄寺</td><td>上午</td><td>广角＋普通焦段</td><td>洞口向外拍时保留人物做比例；宗教空间尊重禁拍标识。</td></tr><tr><td>大都麻村</td><td>下午</td><td>中长焦</td><td>压缩村落、林带和雪峰；只在安全宽阔处停车。</td></tr><tr><td>七彩丹霞</td><td>17:00 后</td><td>长焦最有用</td><td>压缩层理；曝光略减，避免浅色地层过曝。</td></tr><tr><td>平山湖</td><td>上午至中午</td><td>广角＋长焦</td><td>谷底仰拍岩壁，高处压缩山脊；人物穿亮色。</td></tr><tr><td>莫高窟</td><td>上午</td><td>外景即可</td><td>洞内不拍；把注意力留给眼睛和讲解。</td></tr><tr><td>鸣沙山</td><td>日落前 1 小时</td><td>广角＋人像</td><td>逆光对天空测光，连拍人物走沙脊。</td></tr><tr><td>雅丹</td><td>日落前后</td><td>中长焦</td><td>用人物/车辆表现巨大尺度，不离开允许区域。</td></tr><tr><td>月夜星空</td><td>天黑后</td><td>手机夜景/广角大光圈</td><td>固定手机或三脚架；强月光时优先拍地貌与亮星。</td></tr><tr><td>嘉峪关</td><td>下午</td><td>24—70mm</td><td>门洞框景、城墙引导线；注意帽子防风。</td></tr></tbody></table></div>
+    </section>
+
+    <section id="sources">
+      <div class="section-kicker">Verified 2026-09-08</div><h2>官方核实与出发前复核</h2>
+      <p>信息核实截止 2026 年 9 月 8 日。以下尽量使用景区、研究院、政府和铁路官方来源；开放时间受天气、道路、文保、客流与季节影响，9 月 21—23 日应再次逐项查看公告。</p>
+      <ol class="sources">
+        <li><a href="https://www.binggouhe.com/" target="_blank" rel="noopener">冰沟河景区官网</a>：景区介绍、购票、活动和公告入口；<a href="https://www.binggouhe.com/news/detail/2063526981378560002" target="_blank" rel="noopener">官方常见问题</a>说明天池单程约 10km、往返约 20km、需 6—8 小时，建议 10:00 前抵达。</li>
+        <li><a href="https://www.binggouhe.com/play/detail/1902249511803101186" target="_blank" rel="noopener">冰沟河官方经典线路</a>：马兰花草原、尼美拉峡谷、祁连森林、半亩方塘、大汗营地等游览顺序；<a href="https://www.binggouhe.com/play/detail/2055221717273452545" target="_blank" rel="noopener">官方天池路线</a>用于挑战线复核。</li>
+        <li><a href="https://www.binggouhe.com/news/detail/2096404664957325313" target="_blank" rel="noopener">冰沟河天气闭园实例</a>：山区降雨和道路安全会导致临时关闭，出发前必须看最新公告。</li>
+        <li><a href="https://www.zhangye.gov.cn/chzy/zyly/ajjq/202303/t20230318_1007459.html" target="_blank" rel="noopener">张掖市政府｜大佛寺景区</a>：2026 页面标示 07:00—18:30，含大佛寺、弥陀千佛塔、钟鼓楼和山西会馆。</li>
+        <li><a href="https://www.mtsly.cn/index.html" target="_blank" rel="noopener">马蹄寺景区官网</a>及<a href="https://www.zhangye.gov.cn/chzy/zyly/ajjq/202303/t20230318_1007464_ghb.html" target="_blank" rel="noopener">张掖市政府介绍</a>：距市区约 65km，始凿北凉，70 余处窟龛，核心为三十三天石窟。</li>
+        <li><a href="https://www.zhangye.gov.cn/nyj/dzdt/xqdt/202112/t20211228_769365.html" target="_blank" rel="noopener">张掖市政府｜大都麻村乡村旅游</a>：确认其乡村旅游属性；秋色与道路情况仍以当日天气和交通管理为准。</li>
+        <li><a href="https://www.zhangye.gov.cn/chzy/zyly/ajjq/202303/t20230318_1007476.html" target="_blank" rel="noopener">张掖市政府｜七彩丹霞</a>：7 处观景台与彩色丘陵地貌介绍；<a href="https://gansu.gansudaily.com.cn/system/2026/04/17/031354778.shtml" target="_blank" rel="noopener">2026 夏季时间公告</a>仅覆盖至 8/31，故 9 月需复核。</li>
+        <li><a href="https://www.zhangye.gov.cn/chzy/zyly/ajjq/202303/t20230318_1007461.html" target="_blank" rel="noopener">张掖市政府｜平山湖大峡谷</a>：距市区约 56km，核心为红色砂砾岩峡谷与徒步探险体验。</li>
+        <li><a href="https://www.dunhuangcaves.org/info/1020/7498.htm" target="_blank" rel="noopener">敦煌研究院｜2026 莫高窟开放公告</a>：旺季 08:00—18:00，16:10 停止检票；常规票限额、数字电影＋8 窟、提前 30 分钟到场。</li>
+        <li><a href="https://www.gswbj.gov.cn/a/2026/04/16/28007.html" target="_blank" rel="noopener">甘肃文旅｜鸣沙山月牙泉 2026 时间与购票</a>：自 4/20 起 06:00—19:30、全面线上实名售票；秋季仍需看后续公告。</li>
+        <li><a href="https://www.dhymg.com/" target="_blank" rel="noopener">敦煌阳关玉门关旅游区官网</a>：遗址介绍、门票、交通与公告；咨询 400-001-9181。</li>
+        <li><a href="https://thirdpage.thepaper.cn/h5/jrtt/33240914" target="_blank" rel="noopener">敦煌雅丹 2026-06 时间公告（政务转载）</a>：夏季 06:00—19:30，设日落班；单程约 158km、沿途补给少。秋季班次需复核。</li>
+        <li><a href="https://zwfw.gansu.gov.cn/jiayuguan/tsfw/lyzq/lyzx/lyzc/art/2026/art_0076b2ad870d44ad90090478d19b45b9.html" target="_blank" rel="noopener">嘉峪关市文旅局｜2026 旺季公告</a>：关城 08:00—18:30；第一墩与悬壁长城至 20:00；日间关城票可获当日联游赠券（以实际售票政策为准）。</li>
+        <li><a href="https://kyfw.12306.cn/otn/gonggao/saleTicketMeans.html" target="_blank" rel="noopener">中国铁路 12306 购票规则</a>：预售期 15 天（含当天），调整时会公告；最终车次、时刻和起售时间只认 12306。</li>
+        <li><a href="https://trains.ctrip.com/TrainSchedule/D2737" target="_blank" rel="noopener">D2737 现行参考时刻</a>：张掖西约 16:50、敦煌约 21:20；所有铁路时刻最终以 12306 票面为准。</li>
+      </ol>
+      <h3>出发前 72 小时只做这 10 件事</h3><ol><li>截图所有航班、铁路、门票二维码、酒店和还车点地址。</li><li>确认 9/24 实际落地时间、机场酒店接机和 D2 08:15 包车。</li><li>决定冰沟河走经典线还是天池线；天池线必须重新接受早起安排。</li><li>在 12306 核对张掖—敦煌、敦煌—嘉峪关的车次和车站名称。</li><li>看冰沟河、肃南、大都麻、丹霞、平山湖、敦煌、雅丹、嘉峪关逐小时天气和大风预警。</li><li>核实七彩丹霞、平山湖、鸣沙山、雅丹、玉门关的秋季开闭园时间。</li><li>确认张掖租车送车到酒店、张掖西站停车场还车，并上传所需证件。</li><li>向西线司机复述“雅丹日落＋安全点短时观星后返程”，并预订当天完整餐食。</li><li>确认莫高窟票面准确时间、票型和证件，按预约时间倒推。</li><li>线上值机，核对嘉峪关酒泉机场名称，不与酒泉市区混淆。</li></ol>
+      <p class="print-note">打印提示：建议 A4、双面、彩色、背景图形开启；浏览器缩放 95%—100%。</p>
+    </section>
+  </main>
+  <footer class="footer"><b>河西走廊之旅 · 2026 执行版</b><br><span class="small" style="color:#cbd5d2">为手机与 A4 打印设计。日落为天文参考，天气、道路和景区运营以当日为准。愿你们从祁连山秋色走到敦煌星空，把两千年的风吹进记忆里。</span></footer>
+</article>
+<script>
+(function(){
+  'use strict';
+  var spotMaps={
+    '冰沟河经典路线':{id:'spot-binggouhe-classic',keyword:'冰沟河生态文化旅游景区',city:'武威',label:'高德导航'},
+    '柴尔龙海／天池挑战路线':{id:'spot-binggouhe-tianchi',keyword:'冰沟河生态文化旅游景区',city:'武威',label:'导航至景区入口'},
+    '马蹄石窟群':{id:'spot-matisi',keyword:'马蹄寺石窟群旅游区',city:'张掖',label:'高德导航'},
+    '骑马＋大都麻村秋景':{id:'spot-daduma',keyword:'大都麻村',city:'张掖',label:'高德搜索'},
+    '七彩丹霞':{id:'spot-danxia',keyword:'张掖七彩丹霞旅游景区北入口',city:'张掖',label:'导航至北入口'},
+    '平山湖大峡谷':{id:'spot-pingshan',keyword:'平山湖大峡谷',city:'张掖',label:'高德导航'},
+    '张掖大佛寺':{id:'spot-dafo',keyword:'张掖大佛寺',city:'张掖',label:'高德导航'},
+    '莫高窟':{id:'spot-mogao',keyword:'莫高窟数字展示中心',city:'敦煌',label:'导航至数字中心'},
+    '鸣沙山月牙泉':{id:'spot-mingsha',keyword:'鸣沙山月牙泉景区中门',city:'敦煌',label:'导航至中门'},
+    '玉门关＋汉长城':{id:'spot-yumenguan',keyword:'玉门关遗址景区游客中心',city:'敦煌',label:'高德导航'},
+    '敦煌雅丹＋月夜观星':{id:'spot-yadan',keyword:'敦煌雅丹国家地质公园',city:'敦煌',label:'高德导航'},
+    '嘉峪关关城':{id:'spot-jiayuguan',keyword:'嘉峪关关城景区',city:'嘉峪关',label:'高德导航'}
+  };
+  document.querySelectorAll('.spot').forEach(function(spot){
+    var heading=spot.querySelector('h3');
+    if(!heading||!spotMaps[heading.textContent.trim()]) return;
+    var item=spotMaps[heading.textContent.trim()];
+    spot.id=item.id;
+    var top=spot.querySelector('.spot-top');
+    var rating=top&&top.querySelector('.rating');
+    if(!top||!rating) return;
+    var actions=document.createElement('div');actions.className='spot-actions';
+    rating.parentNode.insertBefore(actions,rating);actions.appendChild(rating);
+    var link=document.createElement('a');link.className='map-link';link.target='_blank';link.rel='noopener';link.textContent='⌖ '+item.label;
+    link.href='https://uri.amap.com/search?keyword='+encodeURIComponent(item.keyword)+'&city='+encodeURIComponent(item.city)+'&view=map&src=hexizoulang-roadbook&callnative=1';
+    link.setAttribute('aria-label','在高德地图中打开'+heading.textContent.trim());actions.appendChild(link);
+  });
+  document.querySelectorAll('.day').forEach(function(day){
+    var button=document.createElement('button');button.type='button';button.className='day-toggle';button.textContent='收起当天';
+    var titleBox=day.querySelector('.day-head>div:nth-child(2)');if(titleBox) titleBox.appendChild(button);
+    button.addEventListener('click',function(){var collapsed=day.classList.toggle('collapsed');button.textContent=collapsed?'展开当天':'收起当天';});
+  });
+
+  var expandButton=document.getElementById('expandAll');
+  expandButton.addEventListener('click',function(){
+    var anyOpen=Array.prototype.some.call(document.querySelectorAll('.day'),function(day){return !day.classList.contains('collapsed');});
+    document.querySelectorAll('.day').forEach(function(day){day.classList.toggle('collapsed',anyOpen);var b=day.querySelector('.day-toggle');if(b)b.textContent=anyOpen?'展开当天':'收起当天';});
+    expandButton.textContent=anyOpen?'展开全部':'收起全部';
+  });
+  document.getElementById('printBook').addEventListener('click',function(){window.print();});
+})();
+</script>
+</body>
+</html>
+
