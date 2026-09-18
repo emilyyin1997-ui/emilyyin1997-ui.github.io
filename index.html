@@ -51,6 +51,9 @@ dialog{padding:0;border:1px solid var(--line);border-radius:18px;background:var(
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}}
 @media print{@page{size:A4;margin:14mm}html{scroll-behavior:auto}.book{margin:0;max-width:none}.cover{min-height:0;page-break-after:avoid;padding:20px;color:#222;background:#f2e7d7;display:block}.cover:after{display:none}.cover h1{font-size:30pt;text-shadow:none}.cover .lead,.cover-date,.eyebrow{color:#222}.edition,.route{display:none}nav,.save-strip,.day-picker,.plan-settings,.tools,.skip-link,.primary-action,.secondary-action,.copy-place,.pending-link,dialog,.toast,.noscript-note{display:none!important}main{padding:0}section{break-before:auto;margin:20px 0}#today .today-card{background:#fff;color:#222;border:1px solid #ccc;padding:12px}#today .today-card p,#today .small{color:#333}.day[hidden]{display:block!important}.day{padding:14px;break-inside:auto}.day-head{break-after:avoid}.slot{break-inside:avoid}.spot-fold{display:block;break-before:auto}.spot-fold>summary{font-size:16pt}.spot{break-inside:auto}.guide-extra{display:block}.operating-note{break-inside:avoid}.spot-actions{display:none}.today-bottom{display:block}.budget-summary{grid-template-columns:repeat(4,1fr)}.budget-summary>div{background:#fff;color:#222;border:1px solid #bbb}.budget-summary b,.budget-summary small{color:#222}.budget-grid,.record-grid{grid-template-columns:1fr 1fr}.budget-group{break-inside:auto}.cost-row,.task-row,.pack-row{break-inside:avoid}.record-grid textarea{height:auto;min-height:70px}.footer{color:#222;background:#fff;padding:15px}.footer small{color:#333}.guide-extra>div{margin-bottom:8px}.slot p,.slot-note,.task-row label{font-size:10pt}.type-tag{font-size:8pt}.callout{break-inside:avoid}details:not([open])>*:not(summary){display:block!important}}
 @media print{.print-day-head{display:grid}#day-outfit,#day-alerts{display:none}.day .outfit-grid{grid-template-columns:repeat(3,1fr)}.day .weather-strip{break-inside:avoid}.paid-summary{grid-template-columns:1fr 1fr}.outfit-adjust,.outfit-grid>div{break-inside:avoid}}
+.route-map{margin:0 0 3.5rem}.route-map figure{margin:0;border:1px solid var(--line);border-radius:18px;overflow:hidden;background:#fbf7ef;box-shadow:0 12px 32px rgba(73,48,32,.08)}.route-map img{display:block;width:100%;height:auto}.route-map figcaption{padding:11px 16px;color:var(--muted);font-size:.82rem;border-top:1px solid var(--line);background:rgba(255,255,255,.72)}
+@media(max-width:760px){.route-map{margin:0 -8px 2.8rem}.route-map figure{border-radius:13px}.route-map figcaption{padding:9px 12px;font-size:.76rem}}
+@media print{.route-map{margin:12px 0 18px;break-inside:avoid}.route-map figure{box-shadow:none;border-color:#bbb}.route-map figcaption{color:#333}}
 </style>
 </head>
 <body>
@@ -58,13 +61,14 @@ dialog{padding:0;border:1px solid var(--line);border-radius:18px;background:var(
 <div class="book">
   <header class="cover">
     <div class="cover-copy"><div class="eyebrow">GANSU · AUTUMN 2026</div><h1>河西走廊</h1><p class="lead">从祁连山到敦煌，把时间留给沿途。</p><div class="route"><span>中川</span><span>冰沟河</span><span>张掖</span><span>敦煌</span><span>嘉峪关</span></div></div>
-    <div class="cover-foot"><div class="cover-date">2026.09.24 — 10.01<br><b>8 天 7 晚 · 两人同行</b></div><div class="edition">本地完整版<br>2026.09.09 修订</div></div>
+    <div class="cover-foot"><div class="cover-date">2026.09.24 — 10.01<br><b>8 天 7 晚 · 两人同行</b></div><div class="edition">本地完整版<br>2026.09.18 更新</div></div>
   </header>
-  <nav aria-label="主目录"><a href="#today" class="active">当天</a><a href="#spots">指南</a><a href="#food">酒店</a><a href="#pocket">随身</a><a href="#budget">预算</a><a href="#packing">清单</a><a href="#sources">依据</a></nav>
+  <nav aria-label="主目录"><a href="#route-map" class="active">地图</a><a href="#today">当天</a><a href="#spots">指南</a><a href="#food">酒店</a><a href="#budget">预算</a><a href="#packing">清单</a><a href="#sources">依据</a></nav>
   <main>
     <div class="save-strip"><span id="calendar-state">行前准备</span><span id="save-state" role="status">正在读取本机记录…</span></div>
+    <section id="route-map" class="route-map" aria-label="河西走廊行程路线地图"><figure><img src="assets/hexi-route-map.webp" width="1672" height="941" alt="从兰州中川经武威、冰沟河、张掖、敦煌到嘉峪关的行程路线图，标注沿途景点、每日路线和参考距离"><figcaption>路线与公里数为行程示意；景区道路、铁路里程和当日导航可能略有差异。</figcaption></figure></section>
     <section id="today" aria-labelledby="today-title">
-      <div class="section-kicker">ONE DAY AT A TIME</div><div class="section-heading"><h2 id="today-title">今天怎么走</h2><a href="#pocket" class="pending-link" id="pending-link">查看待办</a></div>
+      <div class="section-kicker">ONE DAY AT A TIME</div><div class="section-heading"><h2 id="today-title">今天怎么走</h2></div>
       <div id="day-picker" class="day-picker" role="group" aria-label="选择行程日期"></div>
       <div class="today-card"><div class="today-top"><span class="pill" id="day-date"></span><span id="day-status" class="small"></span></div><h3 id="day-title"></h3><p id="day-key"></p><div class="today-bottom"><div><span class="small">住宿 / 转场</span><div id="day-stay"></div></div></div></div>
       <details class="plan-settings"><summary>路线选择 <span id="plan-summary"></span></summary><div class="plan-grid">
@@ -76,10 +80,10 @@ dialog{padding:0;border:1px solid var(--line);border-radius:18px;background:var(
       <div id="day-outfit" class="outfit-card"></div>
       <div id="day-schedule"></div>
     </section>
-    <section id="spots"><div class="section-kicker">FIELD GUIDE</div><h2>景点深度指南</h2><p class="sub">时间表里的“查看指南”在当前页面打开，关闭后回到原来的位置。高德按钮为地点搜索，请核对入口；它需要联网。</p><details class="spot-fold" id="guide-spot-binggouhe-classic"><summary>冰沟河经典路线 · 展开指南</summary><article class="spot" id="spot-binggouhe-classic"><div class="spot-top"><div><div class="section-kicker">Wuwei · Qilian Mountains</div><h3>冰沟河经典路线</h3></div><div class="spot-actions"><a class="map-link" href="https://uri.amap.com/search?keyword=%E5%86%B0%E6%B2%9F%E6%B2%B3%E7%94%9F%E6%80%81%E6%96%87%E5%8C%96%E6%97%85%E6%B8%B8%E6%99%AF%E5%8C%BA&amp;city=%E6%AD%A6%E5%A8%81&amp;view=map&amp;src=hexi-roadbook&amp;callnative=1" target="_blank" rel="noopener noreferrer">高德搜索入口</a><button class="copy-place" type="button" data-copy="冰沟河生态文化旅游景区">复制地点</button></div></div><p>冰沟河位于祁连山东端，景观并不是单一“冰川”，而是由高山草甸、河谷、峡谷、云杉林和雪山视野组成的连续山地空间。9 月下旬若气候正常，林木与草地会逐渐进入秋色期：低处黄绿相间，高处更早变冷，天气好的时候能在同一天看到森林、裸岩与远处雪线。</p><details class="operating-note"><summary>运营时间与入口 · 出发前复核</summary><p>工作日 08:30—18:30；周末及法定节假日 08:00—18:30</p><p class="small">原版收录参考；停止售票、停止入园、末班景交和最终离场应分别向景区确认。</p></details><div class="spot-meta"><div><b>建议时长</b>4—4.5 小时</div><div><b>体力</b>中</div><div><b>核心</b>峡谷＋森林</div><div><b>天气</b>可能临时关闭</div></div><div class="grid2"><div><h4>推荐游览顺序</h4><ol><li>乘景交车进入，先看马兰花草原的开阔尺度。</li><li>在尼美拉峡谷观察河谷、岩壁与植被变化。</li><li>把主要步行时间留给祁连森林和半亩方塘。</li><li>大汗营地、水亭和冰沟老街作为返程休息点。</li></ol></div><div><h4>怎么取舍</h4><ul><li>优先自然景观，演艺、商业体验和长时间拍照靠后。</li></ul></div></div><div class="guide-extra"><div><b>看景方法</b><p>进入景区后留意海拔升高带来的植被变化：草甸逐渐让位于针叶林，沟谷湿润处颜色更深，背阴坡更冷。不要只找一个“终点打卡”，沿途环境的渐变才是冰沟河最有价值的部分。</p></div><div><b>穿着装备</b><p>速干长袖、抓绒或薄羽绒、防风防水外层、防滑徒步鞋。山区风雨来得快，帽子、一次性雨衣和干燥袜子放随身包；不要只按武威或机场气温穿衣。</p></div><div><b>摄影与天气</b><p>广角适合草原、峡谷和森林纵深，中长焦适合截取雪山、林带和人物。阴天降低天空占比拍植被层次；雨雪、大风或道路管制时服从关闭通知，不在景区外围自行穿越。</p></div></div></article>
+    <section id="spots"><div class="section-kicker">FIELD GUIDE</div><h2>景点深度指南</h2><p class="sub">时间表里的“查看指南”在当前页面打开，关闭后回到原来的位置。高德按钮为地点搜索，请核对入口；它需要联网。</p><details class="spot-fold" id="guide-spot-binggouhe-classic"><summary>冰沟河经典路线 · 展开指南</summary><article class="spot" id="spot-binggouhe-classic"><div class="spot-top"><div><div class="section-kicker">Wuwei · Qilian Mountains</div><h3>冰沟河经典路线</h3></div><div class="spot-actions"><a class="map-link" href="https://uri.amap.com/search?keyword=%E5%86%B0%E6%B2%9F%E6%B2%B3%E7%94%9F%E6%80%81%E6%96%87%E5%8C%96%E6%97%85%E6%B8%B8%E6%99%AF%E5%8C%BA&amp;city=%E6%AD%A6%E5%A8%81&amp;view=map&amp;src=hexi-roadbook&amp;callnative=1" target="_blank" rel="noopener noreferrer">高德搜索入口</a><button class="copy-place" type="button" data-copy="冰沟河生态文化旅游景区">复制地点</button></div></div><p>冰沟河位于祁连山东端，景观并不是单一“冰川”，而是由高山草甸、河谷、峡谷、云杉林和雪山视野组成的连续山地空间。9 月下旬若气候正常，林木与草地会逐渐进入秋色期：低处黄绿相间，高处更早变冷，天气好的时候能在同一天看到森林、裸岩与远处雪线。</p><details class="operating-note"><summary>运营时间与入口 · 出发前复核</summary><p>工作日 08:30—18:30；周末及法定节假日 08:00—18:30</p><p class="small">原版收录参考；停止售票、停止入园、末班景交和最终离场应分别向景区确认。</p></details><div class="spot-meta"><div><b>建议时长</b>4—4.5 小时</div><div><b>体力</b>中</div><div><b>核心</b>峡谷＋森林</div><div><b>天气</b>可能临时关闭</div></div><div class="grid2"><div><h4>推荐游览顺序</h4><ol><li>乘景交车进入，先看马兰花草原的开阔尺度。</li><li>在尼美拉峡谷观察河谷、岩壁与植被变化。</li><li>把主要步行时间留给祁连森林和半亩方塘。</li><li>大汗营地、水亭和冰沟老街作为返程休息点。</li></ol></div><div><h4>怎么取舍</h4><ul><li>优先自然景观，演艺、商业体验和长时间拍照靠后。</li></ul></div></div><div class="guide-extra"><div><b>看景方法</b><p>进入景区后留意海拔升高带来的植被变化：草甸逐渐让位于针叶林，沟谷湿润处颜色更深，背阴坡更冷。不要只找一个“终点打卡”，沿途环境的渐变才是冰沟河最有价值的部分。</p></div><div><b>穿着装备</b><p>速干长袖、抓绒或薄羽绒、防风防水外层、防滑徒步鞋。山区风雨来得快，帽子、一次性雨衣和干燥袜子放随身包；不要只按武威或机场气温穿衣。</p></div><div><b>摄影与天气</b><p>广角适合草原、峡谷和森林纵深，中长焦适合截取雪山、林带和人物。阴天降低天空占比拍植被层次；雨雪、大风或道路管制时服从关闭通知，不在景区外围自行穿越。</p></div></div><div class="callout urgent"><strong>现场求助</strong><a href="tel:09355817777">冰沟河游客服务：0935-5817777</a>。紧急医疗救助拨打 <a href="tel:120">120</a>，报警拨打 <a href="tel:110">110</a>；山区求助时说明所在景区、服务站和步道位置，并优先联系现场工作人员。</div></article>
 
       </details>
-<details class="spot-fold" id="guide-spot-binggouhe-tianchi"><summary>柴尔龙海／天池挑战路线 · 展开指南</summary><article class="spot" id="spot-binggouhe-tianchi"><div class="spot-top"><div><div class="section-kicker">Binggouhe · Challenge</div><h3>柴尔龙海／天池挑战路线</h3></div><div class="spot-actions"><a class="map-link" href="https://uri.amap.com/search?keyword=%E5%86%B0%E6%B2%9F%E6%B2%B3%E7%94%9F%E6%80%81%E6%96%87%E5%8C%96%E6%97%85%E6%B8%B8%E6%99%AF%E5%8C%BA&amp;city=%E6%AD%A6%E5%A8%81&amp;view=map&amp;src=hexi-roadbook&amp;callnative=1" target="_blank" rel="noopener noreferrer">高德搜索入口</a><button class="copy-place" type="button" data-copy="冰沟河生态文化旅游景区">复制地点</button></div></div><p>柴尔龙海湖面海拔约 4008 米。原版路线资料为往返约 20 公里、通常 6—8 小时，具体线路与服务站以景区现场为准。此线是有条件的挑战方案；不能用较快配速弥补睡眠、接驳或撤离余量不足。</p><details class="operating-note"><summary>运营时间与入口 · 出发前复核</summary><p>同冰沟河：工作日 08:30—18:30；周末及节假日 08:00—18:30；预约时段以订单为准；最晚起步需结合撤离安排确认</p><p class="small">原版收录参考；停止售票、停止入园、末班景交和最终离场应分别向景区确认。</p></details><div class="spot-meta"><div><b>里程</b>往返约 20km</div><div><b>体力</b>高</div><div><b>海拔</b>湖面约 4008m</div><div><b>预约</b>按实际时段核验</div></div><div class="grid2"><div><h4>路线节奏</h4><ul><li>约 3km：丰会服务点，第一次判断身体状态。</li><li>约 6km：石羊服务点，补水并再次评估。</li><li>约 9km：柴海服务点，距湖约 1km。</li><li>约 10km：柴尔龙海，到湖后不能因拍照拖延返程。</li></ul></div><div><h4>立即下撤信号</h4><ul><li>头痛持续加重、恶心或明显眩晕。</li><li>步态不稳、反应迟缓、异常乏力。</li><li>胸闷、静止时仍明显喘不过气。</li><li>天气转坏、能见度下降或官方要求撤离。</li></ul></div></div><div class="guide-extra"><div><b>食水与装备</b><p>每人至少 1.5—2L 水、电解质饮料、午餐、能量食物、保暖层、雨衣、头灯和充电宝。登山杖能减轻下坡负担；新鞋、牛仔裤和单层城市运动鞋都不合适。</p></div><div><b>安全原则</b><p>结伴、不夜爬、不脱离开放路线。便携氧气只能缓解一部分不适，不能作为继续上升的理由。没有规律徒步经历、近期感冒或有心肺疾病者应选择经典线。</p></div></div></article>
+<details class="spot-fold" id="guide-spot-binggouhe-tianchi"><summary>柴尔龙海／天池挑战路线 · 展开指南</summary><article class="spot" id="spot-binggouhe-tianchi"><div class="spot-top"><div><div class="section-kicker">Binggouhe · Challenge</div><h3>柴尔龙海／天池挑战路线</h3></div><div class="spot-actions"><a class="map-link" href="https://uri.amap.com/search?keyword=%E5%86%B0%E6%B2%9F%E6%B2%B3%E7%94%9F%E6%80%81%E6%96%87%E5%8C%96%E6%97%85%E6%B8%B8%E6%99%AF%E5%8C%BA&amp;city=%E6%AD%A6%E5%A8%81&amp;view=map&amp;src=hexi-roadbook&amp;callnative=1" target="_blank" rel="noopener noreferrer">高德搜索入口</a><button class="copy-place" type="button" data-copy="冰沟河生态文化旅游景区">复制地点</button></div></div><p>柴尔龙海湖面海拔约 4008 米。原版路线资料为往返约 20 公里、通常 6—8 小时，具体线路与服务站以景区现场为准。此线是有条件的挑战方案；不能用较快配速弥补睡眠、接驳或撤离余量不足。</p><details class="operating-note"><summary>运营时间与入口 · 出发前复核</summary><p>同冰沟河：工作日 08:30—18:30；周末及节假日 08:00—18:30；预约时段以订单为准；最晚起步需结合撤离安排确认</p><p class="small">原版收录参考；停止售票、停止入园、末班景交和最终离场应分别向景区确认。</p></details><div class="spot-meta"><div><b>里程</b>往返约 20km</div><div><b>体力</b>高</div><div><b>海拔</b>湖面约 4008m</div><div><b>预约</b>按实际时段核验</div></div><div class="grid2"><div><h4>路线节奏</h4><ul><li>约 3km：丰会服务点，第一次判断身体状态。</li><li>约 6km：石羊服务点，补水并再次评估。</li><li>约 9km：柴海服务点，距湖约 1km。</li><li>约 10km：柴尔龙海，到湖后不能因拍照拖延返程。</li></ul></div><div><h4>立即下撤信号</h4><ul><li>头痛持续加重、恶心或明显眩晕。</li><li>步态不稳、反应迟缓、异常乏力。</li><li>胸闷、静止时仍明显喘不过气。</li><li>天气转坏、能见度下降或官方要求撤离。</li></ul></div></div><div class="guide-extra"><div><b>食水与装备</b><p>每人至少 1.5—2L 水、电解质饮料、午餐、能量食物、保暖层、雨衣、头灯和充电宝。登山杖能减轻下坡负担；新鞋、牛仔裤和单层城市运动鞋都不合适。</p></div><div><b>安全原则</b><p>结伴、不夜爬、不脱离开放路线。便携氧气只能缓解一部分不适，不能作为继续上升的理由。没有规律徒步经历、近期感冒或有心肺疾病者应选择经典线。</p></div></div><div class="callout urgent"><strong>紧急联系</strong><a href="tel:09355817777">冰沟河游客服务：0935-5817777</a>。紧急医疗救助拨打 <a href="tel:120">120</a>，报警拨打 <a href="tel:110">110</a>。出现持续心悸、胸闷、眩晕或步态不稳时立即停止上升，并联系同行者、服务站或工作人员陪同下撤。</div></article>
 
       </details>
 <details class="spot-fold" id="guide-spot-matisi"><summary>马蹄石窟群 · 展开指南</summary><article class="spot" id="spot-matisi"><div class="spot-top"><div><div class="section-kicker">Zhangye · Sunan</div><h3>马蹄石窟群</h3></div><div class="spot-actions"><a class="map-link" href="https://uri.amap.com/search?keyword=%E9%A9%AC%E8%B9%84%E5%AF%BA%E7%9F%B3%E7%AA%9F%E7%BE%A4%E6%97%85%E6%B8%B8%E5%8C%BA&amp;city=%E5%BC%A0%E6%8E%96&amp;view=map&amp;src=hexi-roadbook&amp;callnative=1" target="_blank" rel="noopener noreferrer">高德搜索入口</a><button class="copy-place" type="button" data-copy="马蹄寺石窟群旅游区">复制地点</button></div></div><p>马蹄寺始凿于十六国北凉时期，70 余处窟龛散布在祁连山北麓的红色崖壁中。它与莫高窟并不重复：莫高窟以壁画、彩塑和完整讲解体系见长，马蹄寺最难替代的体验则是进入崖壁内部，在狭窄、陡峭且上下连通的石道中攀登，亲身感受洞窟如何与山体结合。</p><details class="operating-note"><summary>运营时间与入口 · 出发前复核</summary><p>常规参考 08:30—18:00；核心洞窟可能约 17:30 停止进入，前一日电话复核</p><p class="small">原版收录参考；停止售票、停止入园、末班景交和最终离场应分别向景区确认。</p></details><div class="spot-meta"><div><b>本日时长</b>约 2 小时</div><div><b>体力</b>中高</div><div><b>核心</b>三十三天石窟</div><div><b>环境</b>阴影处湿冷</div></div><div class="grid2"><div><h4>两小时优先顺序</h4><ol><li>在北寺外侧看整面崖壁和洞窟分布。</li><li>进入三十三天石窟，体验层层相连的洞道。</li><li>看藏佛殿、马蹄殿及宗教空间。</li><li>余时才给千佛洞或较远外围区域。</li></ol></div><div><h4>进入洞道前</h4><ul><li>大包留车上，小包前背，双手保持空闲。</li><li>摘下容易掉落的帽子和长挂饰，不用自拍杆。</li><li>怕黑、幽闭、恐高或膝伤者可只看外部崖壁。</li><li>上下行保持间距，不催促前方游客。</li></ul></div></div><div class="guide-extra"><div><b>观察重点</b><p>先从外部理解崖壁开凿位置，再进入洞内比较门洞、阶梯和礼佛空间的尺度。留意崖壁颜色、窟龛层级和山谷视线，理解这里既是宗教场所，也是适应自然地形的建筑工程。</p></div><div><b>体力分配</b><p>三十三天是当天最费体力的部分，进洞前活动脚踝和膝盖。上行不追赶，下行扶稳、重心放低；完成核心段后即使还有体力，也不要为了外围点挤掉午餐、骑马和丹霞。</p></div><div><b>穿着与拍摄</b><p>防滑徒步鞋、长裤、薄抓绒和防风层。洞内和宗教空间是否允许拍摄只看现场标识；外部拍摄可用广角纳入整片红崖，用洞口和人物表现尺度。</p></div></div></article>
@@ -122,40 +126,16 @@ dialog{padding:0;border:1px solid var(--line);border-radius:18px;background:var(
     </section>
 
     
-    <section id="pocket"><div class="section-kicker">KEEP IT CLOSE</div><h2>随身资料与待办</h2><p class="sub">只保存在当前浏览器；不会自动传给别人，也不会自动核验订单。换设备前导出备份。文件模式下各浏览器保存行为可能不同，重要记录建议另存一份。</p>
-      <div class="tools"><button type="button" id="download-html" class="primary-action">下载含当前记录的完整 HTML</button><button type="button" id="export-json" class="secondary-action">导出记录备份</button><label class="secondary-action file-label">导入记录备份<input id="import-json" type="file" accept=".json,application/json"></label><button type="button" id="print-book" class="secondary-action">打印 / 保存 PDF</button></div>
-      <p class="small">下载的完整 HTML 可直接离线打开；地图、预约、外部来源页面仍需联网。含当前记录的文件也会包含你填写的个人资料，请按需要分享。</p>
-      <div id="import-error" role="alert" class="validation" hidden></div>
-      <h3>票面信息</h3><div class="record-grid">
-        <label>9/24 去程航班号<input data-field="flight1" maxlength="40" placeholder="例如：航司及航班号"></label><label>9/24 实际计划落地时间<input data-field="landing" type="time"></label>
-        <label>9/25 高铁车次<input data-field="rail0Code" maxlength="40" placeholder="已出票 · 车次待补"></label><label>9/25 中川机场东发车<input data-field="rail0" type="time"></label><label>9/25 到达武威东<input data-field="rail0Arrival" type="time"></label>
-        <label>9/27 动车车次<input data-field="rail1Code" maxlength="40" placeholder="已出票 · 车次待补"></label><label>9/27 实际发车时间<input data-field="rail1" type="time"></label><label>9/27 实际到达敦煌时间<input data-field="rail1Arrival" type="time"></label>
-        <label>9/28 莫高窟票种<select data-field="mogaoType"><option value="unknown">已购 · 票种待录</option><option value="regular">常规票</option><option value="emergency">应急票</option><option value="other">其他票种</option></select></label><label>9/28 票面预约时间<input data-field="mogao" type="time"></label>
-        <label>9/30 动车车次<input data-field="rail2Code" maxlength="40" placeholder="已出票 · 车次待补"></label><label>9/30 实际发车时间<input data-field="rail2" type="time"></label><label>9/30 实际到达嘉峪关南时间<input data-field="rail2Arrival" type="time"></label>
-        <label>10/1 返程航班号<input data-field="flight2" maxlength="40" placeholder="起飞参考 14:00"></label>
-      </div><p class="small">三段铁路均已出票：9/25 07:49 中川机场东→09:00 武威东、9/27 16:50 张掖西→敦煌、9/30 08:40 敦煌→嘉峪关南。车次编号和后两段到达时刻可按电子客票补录。</p>
-      <h3>酒店、接送与餐食</h3><div class="record-grid">
-        <label>如家中川国际机场店 / 接机电话<textarea data-field="hotel1" rows="2" maxlength="1500" placeholder="已订；补录接机电话和集合点"></textarea></label>
-        <label>张掖御景国际酒店 / 晚到餐厅<textarea data-field="hotel2" rows="2" maxlength="1500" placeholder="已订；补录晚餐主选与备选"></textarea></label>
-        <label>敦煌山月间酒店<textarea data-field="hotel3" rows="2" maxlength="1500" placeholder="已订；补录酒店电话"></textarea></label>
-        <label>嘉峪关晨枫大酒店 / 送机<textarea data-field="hotel4" rows="2" maxlength="1500" placeholder="已订；补录送机安排"></textarea></label>
-        <label>D2 包车司机 / 集合点<textarea data-field="driver" rows="2" maxlength="1500" placeholder="司机电话、接人地点、费用与等候约定"></textarea></label>
-        <label>张掖租车 / 还车点<textarea data-field="car" rows="2" maxlength="1500" placeholder="门店电话、停车场位置与验车约定"></textarea></label>
-        <label>敦煌西线联系人 / 日落班<textarea data-field="west" rows="2" maxlength="1500" placeholder="接车、日落班、景交结束与返城安排"></textarea></label>
-        <label>补充备注<textarea data-field="notes" rows="2" maxlength="3000" placeholder="同行人的需求、备用安排等"></textarea></label>
-      </div>
-      <div class="section-heading"><h3>出发前待办</h3><span id="tasks-count" class="small"></span></div><div id="booking-tasks" class="booking-tasks"></div>
-      <div class="callout"><strong>现场求助</strong><a href="tel:09355817777">冰沟河游客服务：0935-5817777</a>。紧急医疗救助拨打 <a href="tel:120">120</a>，报警拨打 <a href="tel:110">110</a>。山区说明景区、服务站和所在步道，尽快联系现场工作人员；不只依赖手机信号。</div>
-    </section>
     <section id="budget"><div class="section-kicker">PAID · TWO PEOPLE · CNY</div><h2>已付账本</h2><p class="sub">只记实际支付，自动汇总两人总额与人均。空白表示未记录，0 表示确认未付或无需付款；原有已付记录继续保留。</p><div class="budget-summary paid-summary"><div><small>两人已付合计</small><b id="budget-paid"></b><small id="paid-count"></small></div><div><small>人均已付</small><b id="budget-per-person"></b><small>按两人平均分摊</small></div></div><div id="budget-errors" role="alert" class="validation" hidden></div><div id="budget-groups" class="budget-grid"></div></section>
     <section id="packing"><div class="section-kicker">PACK & CHECK</div><div class="section-heading"><h2>装备清单</h2><span class="small" id="packing-count"></span></div><p class="sub">山地与荒漠昼夜温差明显。速干贴身层、抓绒或薄羽绒、防风防水外层按地点与天气组合；出发前分别查看山区和城市预报。</p><div id="packing-list" class="packing-list"></div></section>
     <section id="sources">
-      <div class="section-kicker">Verified 2026-09-09</div><h2>信息依据与复核</h2>
-      <p>原版资料收录于 2026-09-09，新增中秋日期、高海拔与充电宝要求依据。来源不等于当前实时状态；票面、景区运营和道路天气须出发前复核。</p>
+      <div class="section-kicker">Verified 2026-09-18</div><h2>信息依据与复核</h2>
+      <p>资料更新至 2026-09-18，路线图距离采用铁路里程、景区公布距离与行程道路的取整参考值。来源不等于当前实时状态；票面、景区运营、导航距离和道路天气须出发前复核。</p>
       <details class="route-choice"><summary>官方来源链接（需要复核时点开）</summary><div class="route-body"><ol class="sources">
         <li><a href="https://www.binggouhe.com/" target="_blank" rel="noopener">冰沟河景区官网</a>：景区介绍、购票、活动和公告入口；<a href="https://www.binggouhe.com/news/detail/2063526981378560002" target="_blank" rel="noopener">官方常见问题</a>说明天池单程约 10km、往返约 20km、需 6—8 小时，建议 10:00 前抵达。</li>
         <li><a href="https://www.binggouhe.com/play/detail/1902249511803101186" target="_blank" rel="noopener">冰沟河官方经典线路</a>：马兰花草原、尼美拉峡谷、祁连森林、半亩方塘、大汗营地等游览顺序；<a href="https://www.binggouhe.com/play/detail/2055221717273452545" target="_blank" rel="noopener">官方天池路线</a>用于挑战线复核。</li>
         <li><a href="https://www.binggouhe.com/news/detail/2096404664957325313" target="_blank" rel="noopener">冰沟河天气闭园实例</a>：山区降雨和道路安全会导致临时关闭，出发前必须看最新公告。</li>
+        <li><a href="https://www.lzxq.gov.cn/system/2018/11/27/030000327.shtml" target="_blank" rel="noopener">兰张高铁兰武段资料</a>：中川机场至武威段约 194.3km；<a href="https://www.binggouhe.com/introduce" target="_blank" rel="noopener">冰沟河官网</a>标示距武威城约 40km。路线图为便于阅读均取整并标“约”，实际行车按当天导航。</li>
         <li><a href="https://www.zhangye.gov.cn/chzy/zyly/ajjq/202303/t20230318_1007459.html" target="_blank" rel="noopener">张掖市政府｜大佛寺景区</a>：2026 页面标示 07:00—18:30，含大佛寺、弥陀千佛塔、钟鼓楼和山西会馆。</li>
         <li><a href="https://www.mtsly.cn/index.html" target="_blank" rel="noopener">马蹄寺景区官网</a>及<a href="https://www.zhangye.gov.cn/chzy/zyly/ajjq/202303/t20230318_1007464_ghb.html" target="_blank" rel="noopener">张掖市政府介绍</a>：距市区约 65km，始凿北凉，70 余处窟龛，核心为三十三天石窟。</li>
         <li><a href="https://www.zhangye.gov.cn/nyj/dzdt/xqdt/202112/t20211228_769365.html" target="_blank" rel="noopener">张掖市政府｜大都麻村乡村旅游</a>：确认其乡村旅游属性；秋色与道路情况仍以当日天气和交通管理为准。</li>
@@ -170,7 +150,7 @@ dialog{padding:0;border:1px solid var(--line);border-radius:18px;background:var(
         <li><a href="https://trains.ctrip.com/TrainSchedule/D2737" target="_blank" rel="noopener">D2737 现行参考时刻</a>：张掖西约 16:50、敦煌约 21:20；所有铁路时刻最终以 12306 票面为准。</li>
       </ol></div></details>
       <h3>出发前 72 小时最终确认</h3><ol><li>离线保存航班、三段铁路票、门票、四家酒店、用车与还车点信息。</li><li>复核莫高窟票面时间，以及三段铁路的车次、车站和实际到达时刻；铁路节点只认电子客票。</li><li>查看冰沟河、肃南、丹霞、平山湖、敦煌与嘉峪关的天气和临时公告。</li><li>确认 D2 司机 09:00 在武威东接站、景区全天等候并在游后直送张掖；核实张掖送还车方式与西线日落班。</li><li>核实天池、经典区域和进出道路是否分别开放；整个景区关闭时调整为转场与休息。</li><li>联系如家确认深夜接机和 9/25 约 07:05 送中川机场东站；返程前线上值机，确认机场名称为“嘉峪关酒泉机场”。</li></ol>
-      <p class="print-note">原版资料收录于 2026-09-09，新增中秋日期、高海拔与充电宝要求依据。来源不等于当前实时状态；票面、景区运营和道路天气须出发前复核。</p>
+      <p class="print-note">资料更新至 2026-09-18。来源不等于当前实时状态；票面、景区运营、导航距离和道路天气须出发前复核。</p>
     <ul><li><a href="https://www.jinan.gov.cn/col/col118356/art/2026/art_71c85a56f06f4b1cb613a818ab978c20.html" target="_blank" rel="noopener noreferrer">2026 中秋节假期安排</a></li><li><a href="https://www.cdc.gov/yellow-book/hcp/environmental-hazards-risks/high-altitude-travel-and-altitude-illness.html" target="_blank" rel="noopener noreferrer">CDC：高海拔旅行与适应</a></li><li><a href="https://www.caac.gov.cn/XWZX/MHYW/202506/t20250626_227805.html" target="_blank" rel="noopener noreferrer">民航局：充电宝 3C 与召回要求</a></li><li><a href="https://app.caac.gov.cn/INDEX/HLFW/HKLXCS/202303/t20230316_217597.html" target="_blank" rel="noopener noreferrer">民航局：锂电池额定能量与随身携带</a></li><li><a href="https://www.12306.cn/index/view/infos/sale_time.html" target="_blank" rel="noopener noreferrer">12306：查询具体起售时间</a></li><li><a href="https://h5.ifeng.com/c/vivo/v002w1MM4uTBkq7uj4UBZMwDs7YLRkk8OqsPeg--vZFWeQ9U__?vivoBusiness=hiboardnews" target="_blank" rel="noopener noreferrer">丹霞 2026 秋季公告转载（末班景交另行核实）</a></li></ul></section>
   
   </main>
@@ -313,7 +293,7 @@ dialog{padding:0;border:1px solid var(--line);border-radius:18px;background:var(
   }
   let state=emptyState(), loadProblem='';
   try{const embedded=JSON.parse($('roadbook-records').textContent);if(embedded)state=validateRecord(embedded);}catch(e){loadProblem='文件中的记录无法读取：'+e.message;}
-  try{const cached=localStorage.getItem(KEY);if(cached){const local=validateRecord(JSON.parse(cached));if(local.updatedAt>=state.updatedAt)state=local;}}catch(e){storageOK=false;loadProblem='无法读取本机保存的记录；可导入备份或使用文件自带记录。';}
+  try{const cached=localStorage.getItem(KEY);if(cached){const local=validateRecord(JSON.parse(cached));if(local.updatedAt>=state.updatedAt)state=local;}}catch(e){storageOK=false;loadProblem='无法读取本机保存的记录；本次将使用文件自带设置。';}
   for(const [key,value] of Object.entries(BOOKED_DEFAULTS)){if(!state.fields[key])state.fields[key]=value;}
   const currentDay=DATA.days.find(d=>d.date===today);if(currentDay)state.settings.day=currentDay.id;
   const startingHash=location.hash.match(/^#day-([1-8])$/);if(startingHash)state.settings.day=Number(startingHash[1]);
@@ -322,7 +302,7 @@ dialog{padding:0;border:1px solid var(--line);border-radius:18px;background:var(
   function save(){
     state.updatedAt=Date.now();
     try{localStorage.setItem(KEY,JSON.stringify(state));storageOK=true;$('save-state').textContent='已保存到本机 · '+new Date(state.updatedAt).toLocaleTimeString('zh-CN',{hour:'2-digit',minute:'2-digit'});$('save-state').classList.remove('save-error');}
-    catch(e){storageOK=false;$('save-state').textContent='浏览器未允许保存 · 请下载 HTML 或导出备份';$('save-state').classList.add('save-error');}
+    catch(e){storageOK=false;$('save-state').textContent='浏览器未允许保存 · 当前改动仅在本次打开期间有效';$('save-state').classList.add('save-error');}
   }
   function pickup(){return state.settings.d2==='closed'?'09:00 武威东站后直送张掖':'09:00 武威东站';}
   function planNames(){return {d2:{classic:'经典线',challenge:'天池挑战线',closed:'转场休息'}[state.settings.d2],d3:{rest:'减量',full:'完整'}[state.settings.d3],d4:{buffer:'余量版',full:'紧凑版'}[state.settings.d4]};}
@@ -431,7 +411,6 @@ dialog{padding:0;border:1px solid var(--line);border-radius:18px;background:var(
       return '<article class="day" id="day-'+d.id+'"'+(d.id!==state.settings.day?' hidden':'')+'><div class="day-head print-day-head"><div class="day-no">D'+d.id+'</div><div><h3>'+esc(cnDate(d.date)+'｜'+d.title)+'</h3><div class="tags"><span class="tag">'+esc(plan||'计划时间')+'</span>'+(holiday?'<span class="tag holiday-tag">'+holiday+'</span>':'')+'</div></div></div>'+(printing?'<p class="day-meta">'+esc(d.stay)+'</p>'+alerts(d.id).map(alertHTML).join('')+outfitHTML(d.id,false):'')+'<div class="timeline">'+getSlots(d.id).map(slotHTML).join('')+'</div><div class="day-foot"><b>晚了或累了</b> '+esc(d.cut)+(d.id===1?'<span class="small">次日当前计划接车：'+esc(pickup())+'</span>':'')+'</div></article>';
     }).join('');
   }
-  function remainingTasks(){return DATA.tasks.filter(t=>!(t.id==='tianchi'&&state.settings.d2!=='challenge')&&!state.done[t.id]);}
   function renderToday(){
     const d=DATA.days[state.settings.day-1];
     $('day-picker').innerHTML=DATA.days.map(x=>'<button type="button" class="day-pick" data-day="'+x.id+'" aria-pressed="'+(x.id===d.id)+'"><span>'+cnDate(x.date)+'</span><b>D'+x.id+'</b></button>').join('');
@@ -441,19 +420,10 @@ dialog{padding:0;border:1px solid var(--line);border-radius:18px;background:var(
     $('day-stay').innerHTML=esc(hotelLink.name)+'<br><a class="guide-link" href="#'+hotelLink.id+'">查看酒店 ↘</a>';
     $('day-status').textContent=d.date===today?'行程当日':'行程预览';
     $('plan-summary').textContent='D2 '+planNames().d2+' · D3 '+planNames().d3+' · D4 '+planNames().d4;
-    $('pending-link').textContent=remainingTasks().length+' 项待确认';
     $('day-alerts').innerHTML=alerts(d.id).map(alertHTML).join('');
     renderOutfit();
     const gap=Math.ceil((Date.parse('2026-09-24T00:00:00+08:00')-Date.parse(today+'T00:00:00+08:00'))/86400000);
     $('calendar-state').textContent=currentDay?'旅途中 · 今天 D'+currentDay.id:gap>0?'距出发 '+gap+' 天 · 行前准备':'行程回看';
-  }
-  function renderTasks(){
-    $('booking-tasks').innerHTML=DATA.tasks.map(t=>{
-      const inactive=t.id==='tianchi'&&state.settings.d2!=='challenge';
-      const note=t.id==='driver'?'当前路线：'+planNames().d2+'；计划接车 '+pickup()+'。'+t.note:t.note;
-      return '<div class="task-row '+(state.done[t.id]?'done ':'')+(inactive?'inactive':'')+'"><input type="checkbox" id="task-'+t.id+'" data-task="'+t.id+'"'+(state.done[t.id]?' checked':'')+(inactive?' disabled':'')+'><div><label for="task-'+t.id+'"><span class="task-date">'+esc(t.date)+'</span>'+esc(t.name)+'</label><small>'+esc(inactive?'当前方案不需要天池预约；切换挑战线后启用。':note)+'</small></div></div>';
-    }).join('');
-    $('tasks-count').textContent=remainingTasks().length+' 项待确认';
   }
   function renderPacking(){
     $('packing-list').innerHTML=DATA.packing.map((p,i)=>'<label class="pack-row '+(state.packing[i]?'done':'')+'"><input type="checkbox" data-pack="'+i+'"'+(state.packing[i]?' checked':'')+'><span>'+esc(p)+'</span></label>').join('');
@@ -476,12 +446,11 @@ dialog{padding:0;border:1px solid var(--line);border-radius:18px;background:var(
     $('budget-errors').hidden=!invalid;$('budget-errors').textContent=invalid?'金额必须在 0—10,000,000 之间。无效输入尚未保存，合计仍使用上一次有效值。':'';
   }
   function hydrateFields(){document.querySelectorAll('[data-field]').forEach(el=>el.value=state.fields[el.dataset.field]??(el.dataset.field==='mogaoType'?'unknown':''));for(const d of [2,3,4])$('plan-d'+d).value=state.settings['d'+d];}
-  function renderMain(){renderToday();renderSchedule();renderTasks();}
+  function renderMain(){renderToday();renderSchedule();}
   function selectDay(id,scroll=false){state.settings.day=id;save();renderMain();if(scroll)$('today').scrollIntoView?.({behavior:'smooth',block:'start'});document.querySelectorAll('nav a').forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#today'));}
   $('day-picker').addEventListener('click',e=>{const b=e.target.closest('[data-day]');if(b){selectDay(Number(b.dataset.day));history.replaceState(null,'','#day-'+b.dataset.day);}});
   for(const d of [2,3,4])$('plan-d'+d).addEventListener('change',e=>{state.settings['d'+d]=e.target.value;if(d===2&&e.target.value==='challenge'){state.settings.d3='rest';$('plan-d3').value='rest';toast('已同步接车时间，并将 D3 切换为减量安排。');}save();renderMain();});
   document.querySelectorAll('[data-field]').forEach(el=>el.addEventListener('input',()=>{state.fields[el.dataset.field]=el.value;save();renderMain();}));
-  $('booking-tasks').addEventListener('change',e=>{if(!e.target.dataset.task)return;state.done[e.target.dataset.task]=e.target.checked;save();renderTasks();renderToday();});
   $('packing-list').addEventListener('change',e=>{if(e.target.dataset.pack===undefined)return;state.packing[e.target.dataset.pack]=e.target.checked;save();renderPacking();});
   $('budget-groups').addEventListener('input',e=>{
     const el=e.target,id=el.dataset.cost;if(!id)return;
@@ -511,27 +480,12 @@ dialog{padding:0;border:1px solid var(--line);border-radius:18px;background:var(
   });
   function handleHash(){const match=location.hash.match(/^#day-([1-8])$/);if(match)selectDay(Number(match[1]),true);else if(location.hash.startsWith('#spot-')){const spot=$(location.hash.slice(1));if(spot){spot.closest('details').open=true;spot.scrollIntoView?.();}}}
   window.addEventListener('hashchange',handleHash);
-  function download(content,type,name){const blob=new Blob([content],{type});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download=name;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),60000);}
-  $('export-json').addEventListener('click',()=>{download(JSON.stringify(state,null,2),'application/json','河西走廊-记录备份.json');toast('记录备份已生成。');});
-  $('download-html').addEventListener('click',()=>{
-    const copy=document.documentElement.cloneNode(true);copy.querySelector('#roadbook-records').textContent=JSON.stringify(state).replace(/</g,'\\u003c');
-    copy.querySelector('#guide-dialog').removeAttribute('open');copy.querySelector('#dialog-body').replaceChildren();copy.querySelector('#toast').hidden=true;
-    copy.querySelectorAll('[data-field]').forEach(el=>{const value=state.fields[el.dataset.field]||'';if(el.tagName==='TEXTAREA')el.textContent=value;else if(el.tagName==='SELECT'){[...el.options].forEach(o=>o.toggleAttribute('selected',o.value===value));}else el.setAttribute('value',value);});
-    download('<!doctype html>\n'+copy.outerHTML,'text/html;charset=utf-8','河西走廊路书-含当前记录.html');toast('完整 HTML 已生成，可离线打开。');
-  });
-  $('import-json').addEventListener('change',async e=>{
-    const file=e.target.files[0];if(!file)return;
-    try{if(file.size>1000000)throw new Error('备份文件超过 1 MB。');const next=validateRecord(JSON.parse(await file.text()));
-      if(!window.confirm('导入将替换本机当前的路线、预算、资料和清单。确定继续？'))return;
-      state=next;save();hydrateFields();renderMain();renderBudgetInputs();renderPacking();$('import-error').hidden=true;toast('已导入并保存记录。');
-    }catch(err){$('import-error').hidden=false;$('import-error').textContent='未导入，原记录未改变：'+err.message;}finally{e.target.value='';}
-  });
   function beforePrint(){printing=true;renderSchedule();beforePrintState=[...document.querySelectorAll('details')].map(el=>[el,el.open]);beforePrintState.forEach(([el])=>el.open=true);}
   function afterPrint(){beforePrintState.forEach(([el,open])=>el.open=open);beforePrintState=[];printing=false;renderSchedule();}
-  window.addEventListener('beforeprint',beforePrint);window.addEventListener('afterprint',afterPrint);$('print-book').addEventListener('click',()=>window.print());
+  window.addEventListener('beforeprint',beforePrint);window.addEventListener('afterprint',afterPrint);
   if('IntersectionObserver' in window){const observer=new IntersectionObserver(entries=>{for(const entry of entries)if(entry.isIntersecting){const link=document.querySelector('nav a[href="#'+entry.target.id+'"]');if(link)document.querySelectorAll('nav a').forEach(a=>a.classList.toggle('active',a===link));}},{rootMargin:'-15% 0px -65% 0px'});document.querySelectorAll('main>section').forEach(el=>observer.observe(el));}
   hydrateFields();renderMain();renderBudgetInputs();renderPacking();
-  $('save-state').textContent=storageOK?(state.updatedAt?'已恢复本机 / 文件记录':'尚无本机修改 · 改动后自动保存'):'当前环境无法读取本机保存 · 请导出备份';
+  $('save-state').textContent=storageOK?(state.updatedAt?'已恢复本机设置':'尚无本机修改 · 改动后自动保存'):'当前环境无法读取本机保存';
   if(loadProblem)toast(loadProblem);
   if(startingHash||location.hash.startsWith('#spot-'))setTimeout(handleHash,0);
 })();
