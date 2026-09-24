@@ -212,9 +212,17 @@ dialog{padding:0;border:1px solid var(--line);border-radius:18px;background:var(
   };
   const d1 = DATA.days[0], d2 = DATA.days[1];
   d1.stay='住宿如家酒店（兰州中川国际机场店）';
-  d1.slots[2].title='到登机口，装满水杯，确认如家酒店接机电话。';
-  d1.slots[6].title='乘如家酒店接驳车前往酒店，办理入住。';
-  d1.slots[7]={time:'23:30',title:'洗漱即睡；与前台确认明早约 07:05 送至中川机场东站，并问清 06:40 能否用早餐。',note:'第二天 07:49 高铁已出票，目的地是 T3 综合交通枢纽内的中川机场东站。',guide:null,kind:'record'};
+  d1.slots=[
+    {time:'16:30',title:'抵达广州白云机场 T3，办理值机和托运。',note:'身份证、充电宝、药物和兰州落地后要穿的保暖层放随身包。',guide:null,kind:'plan'},
+    {time:'17:30—18:30',title:'机场晚餐，正常坐下来吃一顿。',note:'选择主食、蛋白质和蔬菜；同时准备次日早晨可直接吃的面包、鸡蛋或牛奶。',guide:null,kind:'plan'},
+    {time:'18:40',title:'到登机口，装满水杯，确认如家酒店深夜接机电话。',note:'以登机牌上的登机口和截止时间为准。',guide:null,kind:'plan'},
+    {time:'19:50—22:55',title:'东方航空 MU2306：广州白云 T3 → 兰州中川 T3。',note:'计划飞行约 3 小时 05 分；实际起降以航司和机场动态为准。',guide:null,kind:'record'},
+    {time:'22:55—23:35',title:'落地、取行李并联系如家酒店接机。',note:'不进兰州市区，也不临时改乘城际铁路。',guide:null,kind:'plan'},
+    {time:'23:35—00:00',title:'乘酒店接驳车或网约车前往如家酒店，办理入住。',note:'落地延误时先电话告知酒店，确认接驳车等候方式。',guide:null,kind:'plan'},
+    {time:'00:00—00:10',title:'快速洗漱，把第二天衣物、早餐和证件放在手边。',note:'不再整理大件行李，尽量缩短清醒时间。',guide:null,kind:'plan'},
+    {time:'00:10',title:'立即休息；与前台确认明早约 07:05 送至中川机场东站。',note:'第二天 07:49 高铁已出票，06:30 起床；若酒店早餐未开始，使用前一晚准备的早餐。',guide:null,kind:'record'}
+  ];
+  d1.key='MU2306 夜间抵达，落地后直接入住并保护睡眠';
   d2.title='中川机场东 → 武威东 → 冰沟河 → 张掖';
   d2.stay='住宿张掖御景国际酒店';
   const d2Morning=[
@@ -279,6 +287,7 @@ dialog{padding:0;border:1px solid var(--line);border-radius:18px;background:var(
   const driverCost=DATA.costs.find(c=>c.id==='cost-5');if(driverCost){driverCost.name='武威东→冰沟河→张掖用车';driverCost.note='接站、景区等候、游后直送张掖估算';}
   DATA.costs.splice(5,0,{id:'cost-rail0',name:'中川机场东→武威东高铁',group:'transport',estimate:null,note:'已出票；两人实付待录',reserve:false});
   DATA.tasks=DATA.tasks.filter(t=>!['rail1','rail2','hotels'].includes(t.id));
+  const flightTask=DATA.tasks.find(t=>t.id==='flight1');if(flightTask){flightTask.name='补录返程航班号并确认接送机';flightTask.note='去程已确认：MU2306，9/24 19:50 广州白云 T3 起飞，计划 22:55 抵达兰州中川 T3；返程 10/1 14:00 起飞，航班号待补录。';}
   const driverTask=DATA.tasks.find(t=>t.id==='driver');if(driverTask){driverTask.name='确认武威东接车、冰沟河等候与直送张掖';driverTask.note='09:00 武威东接人；确认行李、车牌、全天等候、过路停车、司机休息与取消条件。';}
   DATA.tasks.splice(1,0,{id:'hotelTransfers',date:'9/24 前',name:'确认如家深夜接机与次早送站',note:'落地后接至酒店；9/25 约 07:05 送中川机场东站，同时确认 06:40 早餐。'});
   const KEY = 'hexi-roadbook-2026-complete-v2';
@@ -403,8 +412,7 @@ dialog{padding:0;border:1px solid var(--line);border-radius:18px;background:var(
     }
     return list.map(s=>{
       const result={...s};if(s.offset!==undefined)result.time=range(anchor(id)+s.offset,s.endOffset===null||s.endOffset===undefined?null:anchor(id)+s.endOffset);
-      if(id===1&&s.time==='23:30')result.title='洗漱休息；明早计划接车：'+pickup()+'。';
-      if(id===1&&s.time==='22:15'&&state.fields.landing)result.time=state.fields.landing, result.title='航班计划落地。',result.note='接机与入住据此调整；实际运行以航司为准。';
+      if(id===1&&s.time==='00:10')result.title='立即休息；明早计划送站：'+pickup()+'。';
       if(id===4&&s.offset===0)result.title=(state.fields.rail1?'票面发车：':'参考发车：')+(state.fields.rail1Code||'车次待录')+' · 张掖西 → 敦煌。',result.kind=state.fields.rail1?'record':'reference';
       if(id===7&&s.offset===0)result.title=(state.fields.rail2?'票面发车：':'参考发车：')+(state.fields.rail2Code||'车次待录')+' · 敦煌 → 嘉峪关南。',result.kind=state.fields.rail2?'record':'reference';
       return result;
@@ -413,7 +421,6 @@ dialog{padding:0;border:1px solid var(--line);border-radius:18px;background:var(
   function alerts(id){
     const a=[];if(id>=2&&id<=4)a.push({title:'中秋假期 · 9/25—9/27',text:'停车、检票、洞窟与景交排队需留余量；以下时段是计划，不保证按分钟完成。'});
     if(id===1)a.push({title:'明早 07:49 高铁已出票',text:'约 07:05 从如家送站，前往中川机场东站；09:00 到武威东后由司机接站。当前 D2 为'+planNames().d2+'。'});
-    if(id===1&&state.fields.landing&&state.fields.landing!=='22:15')a.push({title:'落地时间已更新',text:'接机和入住按实际航班调整。'});
     if(id===2&&state.settings.d2==='challenge')a.push({urgent:true,title:'挑战线需要独立判断',text:'约 20 km、湖面约 4008 m；前夜睡眠、海拔适应、预约、接驳与撤离条件均需确认。14:00 是本计划最晚折返上限，需要时更早下撤，不能作为安全保证。'});
     if(id===2&&state.settings.d2==='closed')a.push({title:'景区关闭时直接转场',text:'07:49 高铁和 09:00 武威东接车不变；出站后与司机确认道路，直接前往张掖，不在景区外围自行穿越。'});
     if(id===3&&state.settings.d2==='challenge')a.push({urgent:state.settings.d3==='full',title:'前一天选择了天池挑战线',text:state.settings.d3==='rest'?'本日已采用减量安排，保留马蹄寺与丹霞。':'当前仍选择完整安排；若疲惫或前晚抵达较晚，建议切回减量。'});
